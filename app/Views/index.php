@@ -7,7 +7,7 @@
   <meta name="description" content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
   <meta name="keywords" content="Tailwind CSS, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
   <meta name="author" content="elemis">
-  <title>Sandbox - Modern & Multipurpose Tailwind CSS Template</title>
+  <title>EVX</title>
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +34,14 @@
     .accordion-wrapper .card-header button {
       color: #605dba !important;
     }
+
+    .feature-content {
+      display: none;
+    }
+
+    .feature-content.active {
+      display: block;
+    }
   </style>
 </head>
 
@@ -44,20 +52,20 @@
         <div class="container xl:flex-row lg:flex-row !flex-nowrap items-center my-3">
           <div class="navbar-brand w-full">
             <a href="/">
-              <img src="./assets/img/logo-dark.png" srcset="./assets/img/logo-dark@2x.png 2x" alt="image">
+              <img src="./assets/img/logo_EVX.png" srcset="./assets/img/logo_EVX@2x.png 2x" alt="image">
             </a>
           </div>
           <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
             <div class="offcanvas-header xl:hidden lg:hidden flex items-center justify-between flex-row p-6">
-              <h3 class="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">Sandbox</h3>
+              <h3 class="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">EVX</h3>
               <button type="button" class="btn-close btn-close-white mr-[-0.75rem] m-0 p-0 leading-none text-[#605dba] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex  flex-col !h-full">
               <!-- /.navbar-nav -->
               <div class="offcanvas-footer xl:hidden lg:hidden">
                 <div>
-                  <a href="mailto:first.last@email.com" class="link-inverse">info@email.com</a>
-                  <br> 00 (123) 456 78 90 <br>
+                  <a href="mailto:first.last@email.com" class="link-inverse">evx@email.com</a>
+                  <br> 099-335-0709 <br>
                   <nav class="nav social social-white mt-4">
                     <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i></a>
                     <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i></a>
@@ -76,8 +84,9 @@
           <div class="navbar-other w-full !flex !ml-auto">
             <ul class="navbar-nav !flex-row !items-center !ml-auto">
               <li class="nav-item dropdown language-select uppercase group">
-                <a class="nav-link dropdown-item dropdown-toggle after:!text-[#605dba] xl:!text-[.85rem] lg:!text-[.85rem] md:!text-[1.05rem] sm:!text-[1.05rem] xsm:!text-[1.05rem] hover:!text-[#605dba]" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">En</a>
+                <a class="nav-link dropdown-item dropdown-toggle after:!text-[#605dba] xl:!text-[.85rem] lg:!text-[.85rem] md:!text-[1.05rem] sm:!text-[1.05rem] xsm:!text-[1.05rem] hover:!text-[#605dba]" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TH</a>
                 <ul class="dropdown-menu group-hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">
+                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" href="#">TH</a></li>
                   <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" href="#">En</a></li>
                   <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" href="#">De</a></li>
                   <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" href="#">Es</a></li>
@@ -97,18 +106,15 @@
       <!-- /.navbar -->
       <div class="offcanvas offcanvas-end text-inverse !text-[#cacaca] opacity-100" id="offcanvas-info" data-bs-scroll="true">
         <div class="offcanvas-header flex flex-row items-center justify-between p-[1.5rem]">
-          <h3 class="text-white xl:!text-[1.5rem] text-[calc(1.275rem_+_0.3vw)] !leading-[1.4] mb-0">Sandbox</h3>
+          <h3 class="text-white xl:!text-[1.5rem] text-[calc(1.275rem_+_0.3vw)] !leading-[1.4] mb-0">EVX</h3>
           <button type="button" class="btn-close btn-close-white mr-[-0.5rem] m-0 p-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body !pb-[1.5rem]">
-          <div class="widget mb-8">
-            <p>Sandbox is a multipurpose HTML5 template with various layouts which will be a great solution for your business.</p>
-          </div>
           <!-- /.widget -->
           <div class="widget mb-8">
             <h4 class="widget-title text-white mb-[0.75rem] !text-[.95rem] !leading-[1.45]">Contact Info</h4>
             <address class=" not-italic leading-[inherit] mb-[1rem]"> Moonshine St. 14/05 <br> Light City, London </address>
-            <a class="text-[#cacaca] hover:!text-[#605dba]" href="mailto:first.last@email.com">info@email.com</a><br> 00 (123) 456 78 90
+            <a class="text-[#cacaca] hover:!text-[#605dba]" href="mailto:first.last@email.com">evx@email.com</a><br> 099-335-0709
           </div>
           <!-- /.widget -->
           <div class="widget mb-8">
@@ -145,8 +151,8 @@
           <div class="xl:w-6/12 lg:w-6/12 xxl:w-5/12 w-full flex-[0_0_auto] max-w-full !relative mt-[50px]" data-cues="slideInDown" data-group="page-title" data-delay="700">
             <img src="./assets/img/svg/doodle1.svg" class="h-9 !absolute hidden xl:block lg:block" data-cue="fadeIn" data-delay="3000" style="top: -9%; left: -6%" alt="image">
             <img src="./assets/img/svg/doodle2.svg" class="!h-[5rem] !absolute hidden xl:block lg:block" data-cue="fadeIn" data-delay="3000" style="bottom: 9%; right: -22%" alt="image">
-            <h1 class="xl:text-[2.5rem] text-[calc(1.375rem_+_1.5vw)] font-semibold !leading-[1.15] mb-4">Manage all your bills, accounts and budgets in <span class="text-gradient gradient-7">one place.</span></h1>
-            <p class="lead !text-[1.2rem] !leading-[1.5] font-normal mb-7">Sandbox is available to download from both App Store and Google Play Store.</p>
+            <h1 class="xl:text-[2.5rem] text-[calc(1.375rem_+_1.5vw)] font-semibold !leading-[1.15] mb-4">DOWNLOAD APP NOW!</h1>
+            <p class="lead !text-[1.2rem] !leading-[1.5] font-normal mb-7">EVX is available to download from both App Store and Google Play Store.</p>
             <div class="flex justify-center lg:!justify-start xl:!justify-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="1800">
               <span class="inline-flex"><a href="#" class="!mr-2 inline-block"><img src="./assets/img/photos/button-appstore.svg" class="!h-[3rem] !rounded-[0.8rem]" alt="image"></a></span>
               <span class="inline-flex"><a class="inline-block" href="#"><img src="./assets/img/photos/button-google-play.svg" class="!h-[3rem] !rounded-[0.8rem]" alt="image"></a></span>
@@ -154,7 +160,7 @@
           </div>
           <!-- /column -->
           <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] max-w-full ml-auto mb-[-10rem] xxl:!mb-[-15rem] mt-[50px]" data-cues="slideInDown" data-delay="600">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/photos/devices3.png" srcset="./assets/img/photos/devices3@2x.png 2x" alt="image"></figure>
+            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/evx_1.png" srcset="./assets/img/img_evx/evx_1.png 2x" alt="image"></figure>
           </div>
           <!-- /column -->
         </div>
@@ -180,7 +186,7 @@
             <img src="./assets/img/svg/doodle3.svg" class="!h-[3rem] absolute hidden xl:block lg:block" style="top: -45%; left: 23%" alt="image">
             <img src="./assets/img/svg/doodle4.svg" class="h-8 absolute hidden xl:block lg:block" style="top: 6%; right: 2%" alt="image">
             <h2 class="text-[0.8rem] !leading-[1.35] tracking-[0.02rem] uppercase text-[#aab0bc] !mb-3">App Features</h2>
-            <h3 class="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6">Sandbox makes your spending <span class="text-gradient gradient-7">stress-free</span> for you to have the perfect control.</h3>
+            <h3 class="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6">EVX ทำให้การชาร์จรถยนต์ไฟฟ้าของคุณง่ายขึ้น และสามารถวางแผนการเดินทางได้สะดวกสบายยิ่งขึ้น.</h3>
           </div>
           <!-- /column -->
         </div>
@@ -190,42 +196,35 @@
             <div class="flex flex-wrap mx-[-15px] xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] mt-[-50px] !text-center">
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg !bg-[#fef3e4] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/cloud-network-2.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">Always up to Date</h4>
+                <h4 class="text-[1rem]">อัปเดตอยู่เสมอ</h4>
               </div>
-              <!--/column -->
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#e1f6f0] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/touchscreen.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">Easy Usage</h4>
+                <h4 class="text-[1rem]">ใช้งานง่าย</h4>
               </div>
-              <!--/column -->
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#e9eaf8] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/lock.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">Secure Payments</h4>
+                <h4 class="text-[1rem]">การชำระเงินที่ปลอดภัย</h4>
               </div>
-              <!--/column -->
+              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                <div class="svg-bg svg-bg-lg !bg-[#eaf3ef] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/checked.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
+                <h4 class="text-[1rem]">24/7 Support</h4>
+              </div>
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#f8e7ec] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/rocket.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
                 <h4 class="text-[1rem]">Fast Transactions</h4>
               </div>
-              <!--/column -->
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#f0eaf6] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/bar-chart.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
                 <h4 class="text-[1rem]">Reports & Forecasting</h4>
               </div>
-              <!--/column -->
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#feece9] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/safe.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
                 <h4 class="text-[1rem]">Online Banking</h4>
               </div>
-              <!--/column -->
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#e0e9fa] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/controls.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
                 <h4 class="text-[1rem]">Configurable Fields</h4>
-              </div>
-              <!--/column -->
-              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
-                <div class="svg-bg svg-bg-lg !bg-[#eaf3ef] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/checked.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">List of Transactions</h4>
               </div>
               <!--/column -->
             </div>
@@ -238,8 +237,8 @@
           <div class="md:w-10/12 lg:w-7/12 xl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
             <img src="./assets/img/svg/doodle5.svg" class="!w-[5rem] absolute hidden xl:block lg:block" data-delay="1800" style="bottom: -60%; right: 10%" alt="image">
             <img src="./assets/img/svg/doodle6.svg" class="!h-[5rem] !absolute hidden xl:block lg:block" data-delay="1800" style="top: -40%; left: -5%" alt="image">
-            <h2 class="text-[0.8rem] tracking-[0.02rem] uppercase text-[#aab0bc] !mb-3 !leading-[1.35]">How It Works</h2>
-            <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] !mb-8 xl:!px-6">Download the app, create your profile and <span class="text-gradient gradient-7">voilà</span>, you're all set!</h3>
+            <h2 class="text-[0.8rem] tracking-[0.02rem] uppercase text-[#aab0bc] !mb-3 !leading-[1.35]">เหตุใดจึงควรเลือก EVX?</h2>
+            <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-14 !text-center">ทำความรู้จักกับ EVX</h3>
           </div>
           <!-- /column -->
         </div>
@@ -248,21 +247,21 @@
           <div class="xxl:w-11/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
             <div class="flex flex-wrap mx-[-15px] mt-[-50px] xl:mt-0 lg:mt-0 !text-center items-center">
               <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto mb-[-2.5rem] lg:!mb-0 xl:!mb-0 mt-[50px] xl:mt-0 lg:mt-0">
-                <figure class="mx-auto"><img src="./assets/img/photos/devices4.png" srcset="./assets/img/photos/devices4@2x.png 2x" alt="image"></figure>
+                <figure class="mx-auto"><img src="./assets/img/img_evx/mmexport1719395409979.png" srcset="./assets/img/img_evx/mmexport1719395409979.png 2x" alt="image"></figure>
               </div>
               <!-- /column -->
               <div class="w-full xl:hidden lg:hidden px-[15px] mt-[50px] xl:mt-0 lg:mt-0"></div>
               <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full lg:!-order-1 xl:!-order-1 mt-[50px] xl:mt-0 lg:mt-0">
                 <div class="!mb-8">
                   <span class="xl:text-[3rem] text-[calc(1.425rem_+_2.1vw)] !leading-none mb-3 font-medium text-gradient gradient-7">01</span>
-                  <h4 class="text-[1rem]">Download Application</h4>
-                  <p class="mb-0 xl:!px-7">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.</p>
+                  <h4 class="text-[1rem]">EVX?</h4>
+                  <p class="mb-0 xl:!px-7">EVX คือผู้ให้บริการสถานีอัดประจุไฟฟ้าสำหรับยานยนต์ไฟฟ้า ซึ่งมีสถานีประจุไฟฟ้าครอบคลุมทุกพื้นที่.</p>
                 </div>
                 <!-- /div -->
                 <div>
                   <span class="xl:text-[3rem] text-[calc(1.425rem_+_2.1vw)] !leading-none mb-3 font-medium text-gradient gradient-7">02</span>
-                  <h4 class="text-[1rem]">Quick Registration</h4>
-                  <p class="mb-0 xl:!px-7">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.</p>
+                  <h4 class="text-[1rem]">EVX Application?</h4>
+                  <p class="mb-0 xl:!px-7">EVX Application คือ แอปที่จะมาช่วยอำนวยความสะดวกในการชาร์จรถยนต์ไฟฟ้าของคุณให้มีความสะดวกยิ่งขึ้น และ รวดเร็วมากขึ้น.</p>
                 </div>
                 <!-- /div -->
               </div>
@@ -270,14 +269,14 @@
               <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[50px] xl:mt-0 lg:mt-0">
                 <div class="!mb-8">
                   <span class="xl:text-[3rem] text-[calc(1.425rem_+_2.1vw)] !leading-none mb-3 font-medium text-gradient gradient-7">03</span>
-                  <h4 class="text-[1rem]">Track Your Spending</h4>
-                  <p class="mb-0 xl:!px-7">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.</p>
+                  <h4 class="text-[1rem]">ประเภทเครื่องชาร์จ AC Charger?</h4>
+                  <p class="mb-0 xl:!px-7">AC Charger คือ การชาร์จแบบธรรมดาโดยใช้เวลาชาร์จประมาณ 4 - 16 ชั่วโมง สามารถใช้ได้กับรถ BEV และ PHEV เท่านั้น.</p>
                 </div>
                 <!-- /div -->
                 <div>
                   <span class="xl:text-[3rem] text-[calc(1.425rem_+_2.1vw)] !leading-none mb-3 font-medium text-gradient gradient-7">04</span>
-                  <h4 class="text-[1rem]">Have Total Control</h4>
-                  <p class="mb-0 xl:!px-7">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.</p>
+                  <h4 class="text-[1rem]">ประเภทเครื่องชาร์จ DC Quick Charger?</h4>
+                  <p class="mb-0 xl:!px-7">DC Quick Charger คือ การชาร์จแบบเร็วโดยใช้เวลาชาร์จประมาณ 15 นาที สามารถใช้ได้กับรถ BEV เท่านั้น.</p>
                 </div>
                 <!-- /div -->
               </div>
@@ -302,20 +301,20 @@
             <div class="!relative">
               <img src="./assets/img/svg/doodle7.svg" class="h-7 absolute hidden xl:block lg:block" data-delay="1800" style="top: -90%; right: -3%" alt="image">
               <img src="./assets/img/svg/doodle8.svg" class="!h-[4.5rem] absolute hidden xl:block lg:block" data-delay="1800" style="top: -20%; left: -12%" alt="image">
-              <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]">FAQ</h2>
-              <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-12 lg:!px-8 xl:!px-12 !text-center">If you don't see an <span class="text-gradient gradient-7">answer</span> to your question, you can send us an email from our contact form.</h3>
+              <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]">คำถามที่พบบ่อย</h2>
+              <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-12 lg:!px-8 xl:!px-12 !text-center">หากคุณไม่เห็น<span class="text-gradient gradient-7">คำตอบ</span>สำหรับคำถามของคุณ คุณสามารถส่งอีเมลถึงเราจากแบบฟอร์มติดต่อของเรา</h3>
             </div>
             <div class="flex flex-wrap mx-[-15px]">
               <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mb-0">
                 <div id="accordion-1" class="accordion-wrapper">
                   <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                     <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-1">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-1" aria-expanded="false" aria-controls="accordion-collapse-1-1">Can I cancel my subscription?</button>
+                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-1" aria-expanded="false" aria-controls="accordion-collapse-1-1">สามารถชาร์จรถยนต์ไฟฟ้าระหว่างฝนตกได้ไหม?</button>
                     </div>
                     <!-- /.card-header -->
                     <div id="accordion-collapse-1-1" class="collapse" aria-labelledby="accordion-heading-1-1" data-bs-target="#accordion-1">
                       <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.</p>
+                        <p>โดยปกติรถยนต์พลังงานไฟฟ้าจะมีมาตรฐานความปลอดภัยสูงสุด ระบบไฟฟ้าภายในตัวรถจะได้รับการปิดสนิท และกันน้ำเข้าเป็นอย่างดี ทำให้มั่นใจได้ว่าผู้ใช้งานรถ EV จะได้รับความปลอดภัย เพราะเป็นไปตามมาตรฐานสากล IP54 โดยไม่ต้องกังวลว่าจะเกิดไฟฟ้าลัดวงจรหรือไฟฟ้ารั่ว เพราะตัวเครื่องจะตัดไฟอัตโนมัติ และมี Safety ก่อนอัดประจุเข้าไปในตัวรถ.</p>
                       </div>
                       <!-- /.card-body -->
                     </div>
@@ -324,12 +323,12 @@
                   <!-- /.card -->
                   <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                     <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-2">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-2" aria-expanded="false" aria-controls="accordion-collapse-1-2">Which payment methods do you accept?</button>
+                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-2" aria-expanded="false" aria-controls="accordion-collapse-1-2">การชาร์จ ใช้เวลานานแค่ไหน?</button>
                     </div>
                     <!-- /.card-header -->
                     <div id="accordion-collapse-1-2" class="collapse" aria-labelledby="accordion-heading-1-2" data-bs-target="#accordion-1">
                       <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.</p>
+                        <p>ใช้เวลาประมาณ 30 นาที – 1 ชั่วโมง.</p>
                       </div>
                       <!-- /.card-body -->
                     </div>
@@ -338,12 +337,12 @@
                   <!-- /.card -->
                   <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                     <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-3">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-3" aria-expanded="false" aria-controls="accordion-collapse-1-3">How can I manage my Account?</button>
+                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-3" aria-expanded="false" aria-controls="accordion-collapse-1-3">ฉันจะ “ขอเงินคืน” จากที่เติมไปได้หรือไม่?</button>
                     </div>
                     <!-- /.card-header -->
                     <div id="accordion-collapse-1-3" class="collapse" aria-labelledby="accordion-heading-1-3" data-bs-target="#accordion-1">
                       <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.</p>
+                        <p>ปัจจุบันระบบยังไม่รองรับการ “คืนเงิน” ที่ท่านได้เติมไว้ในระบบได้.</p>
                       </div>
                       <!-- /.card-body -->
                     </div>
@@ -358,12 +357,12 @@
                 <div id="accordion-2" class="accordion-wrapper">
                   <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                     <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-1">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-1" aria-expanded="false" aria-controls="accordion-collapse-2-1">How do I get my subscription receipt?</button>
+                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-1" aria-expanded="false" aria-controls="accordion-collapse-2-1">Application ชื่ออะไร และ ดาวน์โหลดได้จากที่ไหน?</button>
                     </div>
                     <!-- /.card-header -->
                     <div id="accordion-collapse-2-1" class="collapse" aria-labelledby="accordion-heading-2-1" data-bs-target="#accordion-2">
                       <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.</p>
+                        <p>Application “EVX” สามารถดาวน์โหลดแอปพลิเคชั่น “EVX” ได้จาก Google Play (สำหรับ Andriod) หรือ App Store (สำหรับ ios).</p>
                       </div>
                       <!-- /.card-body -->
                     </div>
@@ -372,12 +371,12 @@
                   <!-- /.card -->
                   <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                     <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-2">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-2" aria-expanded="false" aria-controls="accordion-collapse-2-2">Are there any discounts for people in need?</button>
+                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-2" aria-expanded="false" aria-controls="accordion-collapse-2-2">อัตราค่าบริการคิดอย่างไร?</button>
                     </div>
                     <!-- /.card-header -->
                     <div id="accordion-collapse-2-2" class="collapse" aria-labelledby="accordion-heading-2-2" data-bs-target="#accordion-2">
                       <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.</p>
+                        <p>อัตราค่าบริการแต่ละสถานีชาร์จจะไม่เท่ากัน โดยสามารถตรวจสอบผ่านแอปพลิเคชั่น EVX ได้.</p>
                       </div>
                       <!-- /.card-body -->
                     </div>
@@ -386,12 +385,12 @@
                   <!-- /.card -->
                   <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                     <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-3">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-3" aria-expanded="false" aria-controls="accordion-collapse-2-3">Do you offer a free trial edit?</button>
+                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-3" aria-expanded="false" aria-controls="accordion-collapse-2-3">ทำอย่างไร หากเติมเงินแล้วแต่เงินไม่เข้าระบบ App?</button>
                     </div>
                     <!-- /.card-header -->
                     <div id="accordion-collapse-2-3" class="collapse" aria-labelledby="accordion-heading-2-3" data-bs-target="#accordion-2">
                       <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.</p>
+                        <p>ตรวจสอบว่าระบบหักเงินจากบัญชีจริงหรือไม่ หากระบบหักเงินจริงให้รีเฟรชแอปใหม่อีกครั้ง ถ้าหากเงินไม่เข้าระบบจริงให้ติดต่อเจ้าหน้าที่.</p>
                       </div>
                       <!-- /.card-body -->
                     </div>
@@ -418,200 +417,175 @@
           <div class="md:w-11/12 lg:w-9/12 xl:w-8/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
             <img src="./assets/img/svg/doodle3.svg" class="!h-[3rem] absolute hidden xl:block lg:block" style="top: -20%; right: -12%" alt="image">
             <img src="./assets/img/svg/doodle9.svg" class="!h-[7rem] absolute hidden xl:block lg:block" style="bottom: 5%; left: -17%" alt="image">
-            <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]">Why Choose Sandbox?</h2>
-            <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-14 !text-center">Here are a few <span class="text-gradient gradient-7">reasons why</span> our customers choose the Sandbox app.</h3>
+            <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]">วิธีการใช้งาน EVX?</h2>
+            <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-14 !text-center">วิธีการใช้งาน EVX</h3>
           </div>
           <!-- /column -->
         </div>
         <!-- /.row -->
-        <div class="flex-wrap mx-[-15px] flex items-start mb-36">
-          <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky" style="top: 8rem;">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/photos/devices5.png" srcset="./assets/img/photos/devices5@2x.png 2x" alt="image"></figure>
+        <div class="flex-wrap mx-[-15px] flex items-start mb-24">
+          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="1" style="top: 8rem;">
+            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395408180.png" srcset="./assets/img/img_evx/mmexport1719395408180.png 2x" alt="image"></figure>
+          </div>
+          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="2" style="top: 8rem;">
+            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395409979.png" srcset="./assets/img/img_evx/mmexport1719395409979.png 2x" alt="image"></figure>
+          </div>
+          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="3" style="top: 8rem;">
+            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395416427.png" srcset="./assets/img/img_evx/mmexport1719395416427.png 2x" alt="image"></figure>
+          </div>
+          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="4" style="top: 8rem;">
+            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395428031.png" srcset="./assets/img/img_evx/mmexport1719395428031.png 2x" alt="image"></figure>
+          </div>
+          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="5" style="top: 8rem;">
+            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395424620.png" srcset="./assets/img/img_evx/mmexport1719395424620.png 2x" alt="image"></figure>
+          </div>
+          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="6" style="top: 8rem;">
+            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395426292.png" srcset="./assets/img/img_evx/mmexport1719395426292.png 2x" alt="image"></figure>
+          </div>
+          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="7" style="top: 8rem;">
+            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395418708.png" srcset="./assets/img/img_evx/mmexport1719395418708.png 2x" alt="image"></figure>
+          </div>
+          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="8" style="top: 8rem;">
+            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395422836.png" srcset="./assets/img/img_evx/mmexport1719395422836.png 2x" alt="image"></figure>
           </div>
           <!-- /column -->
-          <div class="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] px-[15px] max-w-full ml-auto">
-            <div class="flex flex-row !mb-8">
+          <div class="xl:w-8/12 lg:w-5/12 w-full flex-[0_0_auto] px-[15px] max-w-full ml-auto">
+            <div class="flex flex-row !mb-8 feature" id="feature_1">
               <div>
-                <div class="svg-bg svg-bg-lg bg-[#e6e5f4] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/calendar.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                <div class="svg-bg svg-bg-lg bg-[#e6e5f4] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/lock.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
               </div>
               <div>
-                <h4 class="text-[1rem]">Scheduled Transactions</h4>
-                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna.</p>
-              </div>
-            </div>
-            <div class="flex flex-row !mb-8">
-              <div>
-                <div class="svg-bg svg-bg-lg bg-[#e1f6f0] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/currency.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
-              </div>
-              <div>
-                <h4 class="text-[1rem]">Multiple Currencies</h4>
-                <p>Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.</p>
+                <h4 class="text-[1rem]">เข้าสู่ระบบ</h4>
+                <p>กรอก Email และ Password เพิ่มทำการเข้าสู่ระบบ EVX.</p>
               </div>
             </div>
-            <div class="flex flex-row !mb-8">
+            <div class="flex flex-row !mb-8 feature" id="feature_2">
               <div>
-                <div class="svg-bg svg-bg-lg bg-[#f8e7ec] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/server.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                <div class="svg-bg svg-bg-lg bg-[#e1f6f0] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/search.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
               </div>
               <div>
-                <h4 class="text-[1rem]">Database Management</h4>
-                <p>Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-              </div>
-            </div>
-            <div class="flex flex-row !mb-8">
-              <div>
-                <div class="svg-bg svg-bg-lg !bg-[#fef3e4] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/devices.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
-              </div>
-              <div>
-                <h4 class="text-[1rem]">Sync Between Devices</h4>
-                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna.</p>
+                <h4 class="text-[1rem]">Find your charging point</h4>
+                <p>Map ทำการแสดงสถานีชาร์จที่มีทั้งหมด คุณสามารถเลือกสถานีชาร์จที่อยู่ไกล้ที่สุด หรือทำการเลือกสถานีชาร์จตามการเดินทาง ทำให้สามารถวางแผนการเดินทางได้สะดวกสบาย.</p>
               </div>
             </div>
-            <div class="flex flex-row !mb-8">
+            <div class="flex flex-row !mb-8 feature" id="feature_3">
               <div>
-                <div class="svg-bg svg-bg-lg bg-[#e0e9fa] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/search.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                <div class="svg-bg svg-bg-lg bg-[#f8e7ec] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/pin.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
               </div>
               <div>
-                <h4 class="text-[1rem]">Smart Search</h4>
-                <p>Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.</p>
+                <h4 class="text-[1rem]">Choose your charging point</h4>
+                <p>เมื่อทำการเลือกสถานีชาร์จ จะแสดงรายละเอียดของสถานีชาร์จ สามารถทำการจองสถานีชาร์จได้ด้วยการกดที่ Schedule และทำการกรอกข้อมูลเพื่อทำการจองสถานีชาร์จ.</p>
               </div>
             </div>
-            <div class="flex flex-row !mb-8">
+            <div class="flex flex-row !mb-8 feature" id="feature_4">
               <div>
-                <div class="svg-bg svg-bg-lg !bg-[#eaf3ef] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/compare.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                <div class="svg-bg svg-bg-lg !bg-[#fef3e4] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/server.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
               </div>
               <div>
-                <h4 class="text-[1rem]">Detailed Reports</h4>
-                <p>Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                <h4 class="text-[1rem]">Booking</h4>
+                <p>แสดงรายการที่ทำการจอง และรายละเอียดของรายการจองเช่น วันที่จอง เวลาที่จอง และสามารถยกเลิกรายการจองได้ด้วยการกดที่ Cancel.</p>
+              </div>
+            </div>
+            <div class="flex flex-row !mb-8 feature" id="feature_5">
+              <div>
+                <div class="svg-bg svg-bg-lg bg-[#e0e9fa] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/setting.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+              </div>
+              <div>
+                <h4 class="text-[1rem]">Profile</h4>
+                <p>สามารถแก้ไขชื่อ และEmailได้ด้วยการกดที่ ชื่อหรือEmail และสามารถกดเพื่อเข้าใช้งาน Feature ต่างๆเช่น My Wallet, Saved charging station, Payment methods, Charding reminder หรือ Log out.</p>
+              </div>
+            </div>
+            <div class="flex flex-row !mb-8 feature" id="feature_6">
+              <div>
+                <div class="svg-bg svg-bg-lg !bg-[#eaf3ef] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/wallet.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+              </div>
+              <div>
+                <h4 class="text-[1rem]">My Wallet</h4>
+                <p>แสดงประวัติการทำรายการ Credit, Debit และแสดงยอดเงินคงเหลือปัจจุบัน ถ้าต้องการเติมเงินเข้าบัญชีสามารถทำได้ด้วยการกดที่ Add money.</p>
+              </div>
+            </div>
+            <div class="flex flex-row !mb-8 feature" id="feature_7">
+              <div>
+                <div class="svg-bg svg-bg-lg !bg-[#fbe7f3] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/dot.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+              </div>
+              <div>
+                <h4 class="text-[1rem]">QR Scaner</h4>
+                <p>สแกน QR Code ที่หน้าจอตู้ชาร์จ เพื่อเริ่มทำการชาร์จ.</p>
+              </div>
+            </div>
+            <div class="flex flex-row !mb-8 feature" id="feature_8">
+              <div>
+                <div class="svg-bg svg-bg-lg !bg-[#feece9] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/content.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+              </div>
+              <div>
+                <h4 class="text-[1rem]">Reschedule</h4>
+                <p>แสดงรายละเอียดเกี่ยวกับ การชาร์จที่กำลังดำเนินการอยู่ เช่น เวลาที่ใช้ในการชาร์จ, เปอร์เซ็นต์แบตเตอรี่.</p>
               </div>
             </div>
           </div>
           <!-- /column -->
         </div>
         <!-- /.row -->
-        <div class="flex flex-wrap mx-[-15px]">
-          <div class="md:w-11/12 lg:w-10/12 xl:w-9/12 xxl:w-8/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center !relative">
-            <img src="./assets/img/svg/doodle1.svg" class="h-9 !absolute hidden xl:block lg:block" style="top: 2%; left: 9%" alt="image">
-            <img src="./assets/img/svg/doodle10.svg" class="h-7 absolute hidden xl:block lg:block" style="top: -45%; left: -17%" alt="image">
-            <img src="./assets/img/svg/doodle11.svg" class="!h-[4rem] absolute hidden xl:block lg:block" style="top: -40%; right: -15%" alt="image">
-            <h2 class="text-[0.8rem] tracking-[0.02rem] uppercase text-[#aab0bc] !mb-3 !leading-[1.35]">Happy Customers</h2>
-            <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-12 xl:!px-10 xxl:!px-16">Don't take our word for it. See what <span class="text-gradient gradient-7">customers</span> are saying about us.</h3>
+        <section class="wrapper !bg-[#ffffff] ">
+          <div class="container pt-20 xl:pt-8 lg:pt-8 md:pt-8 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
+            <div class="flex flex-wrap mx-[-15px]">
+              <div class="lg:w-9/12 xl:w-8/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center">
+                <h3 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-10">ตัวอย่าง Application <span class="!relative z-[2] after:content-[''] after:absolute after:z-[-1] after:block after:bg-no-repeat after:bg-bottom after:bottom-[-0.1em] after:w-[110%] after:h-[0.3em] after:-translate-x-2/4 after:left-2/4  style-2 yellow">EVX</span></h3>
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+            <div class="swiper-container grid-view !mb-6" data-margin="30" data-dots="true" data-items-xl="3" data-items-md="2" data-items-xs="1">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide group">
+                    <figure class="!rounded-[.4rem] !mb-6"><img class="!rounded-[.4rem]" src="../../assets/img/img_evx/evx_v1_1.png" srcset="../../assets/img/img_evx/evx_v1_2.png 2x" alt="image"><a class="item-link absolute w-[2.2rem] h-[2.2rem] leading-[2.2rem] z-[1] transition-all duration-[0.3s] ease-in-out opacity-0 text-[#343f52] shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.02)] text-[1rem] flex items-center justify-center rounded-[100%] right-0 bottom-4 bg-[rgba(255,255,255,.7)] hover:bg-[rgba(255,255,255,.9)] hover:!text-[#343f52] group-hover:opacity-100 group-hover:right-[1rem]" href="../../assets/img/img_evx/evx_v1_3.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add before:content-['\eb22']"></i></a></figure>
+                    <!-- /.project-details -->
+                  </div>
+                  <!--/.swiper-slide -->
+                  <div class="swiper-slide group">
+                    <figure class="!rounded-[.4rem] !mb-6"><img class="!rounded-[.4rem]" src="../../assets/img/img_evx/evx_v2_1.png" srcset="../../assets/img/img_evx/evx_v2_2.png 2x" alt="image"><a class="item-link absolute w-[2.2rem] h-[2.2rem] leading-[2.2rem] z-[1] transition-all duration-[0.3s] ease-in-out opacity-0 text-[#343f52] shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.02)] text-[1rem] flex items-center justify-center rounded-[100%] right-0 bottom-4 bg-[rgba(255,255,255,.7)] hover:bg-[rgba(255,255,255,.9)] hover:!text-[#343f52] group-hover:opacity-100 group-hover:right-[1rem]" href="../../assets/img/img_evx/evx_v2_3.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add before:content-['\eb22']"></i></a></figure>
+                    <!-- /.project-details -->
+                  </div>
+                  <!--/.swiper-slide -->
+                  <div class="swiper-slide group">
+                    <figure class="!rounded-[.4rem] !mb-6"><img class="!rounded-[.4rem]" src="../../assets/img/img_evx/evx_v3_1.png" srcset="../../assets/img/img_evx/evx_v3_2.png 2x" alt="image"><a class="item-link absolute w-[2.2rem] h-[2.2rem] leading-[2.2rem] z-[1] transition-all duration-[0.3s] ease-in-out opacity-0 text-[#343f52] shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.02)] text-[1rem] flex items-center justify-center rounded-[100%] right-0 bottom-4 bg-[rgba(255,255,255,.7)] hover:bg-[rgba(255,255,255,.9)] hover:!text-[#343f52] group-hover:opacity-100 group-hover:right-[1rem]" href="../../assets/img/img_evx/evx_v3_3.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add before:content-['\eb22']"></i></a></figure>
+                    <!-- /.project-details -->
+                  </div>
+                  <!--/.swiper-slide -->
+                  <div class="swiper-slide group">
+                    <figure class="!rounded-[.4rem] !mb-6"><img class="!rounded-[.4rem]" src="../../assets/img/img_evx/evx_v4_1.png" srcset="../../assets/img/img_evx/evx_v4_2.png 2x" alt="image"><a class="item-link absolute w-[2.2rem] h-[2.2rem] leading-[2.2rem] z-[1] transition-all duration-[0.3s] ease-in-out opacity-0 text-[#343f52] shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.02)] text-[1rem] flex items-center justify-center rounded-[100%] right-0 bottom-4 bg-[rgba(255,255,255,.7)] hover:bg-[rgba(255,255,255,.9)] hover:!text-[#343f52] group-hover:opacity-100 group-hover:right-[1rem]" href="../../assets/img/img_evx/evx_v4_3.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add before:content-['\eb22']"></i></a></figure>
+                    <!-- /.project-details -->
+                  </div>
+                  <!--/.swiper-slide -->
+                  <div class="swiper-slide group">
+                    <figure class="!rounded-[.4rem] !mb-6"><img class="!rounded-[.4rem]" src="../../assets/img/img_evx/evx_v5_1.png" srcset="../../assets/img/img_evx/evx_v5_2.png 2x" alt="image"><a class="item-link absolute w-[2.2rem] h-[2.2rem] leading-[2.2rem] z-[1] transition-all duration-[0.3s] ease-in-out opacity-0 text-[#343f52] shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.02)] text-[1rem] flex items-center justify-center rounded-[100%] right-0 bottom-4 bg-[rgba(255,255,255,.7)] hover:bg-[rgba(255,255,255,.9)] hover:!text-[#343f52] group-hover:opacity-100 group-hover:right-[1rem]" href="../../assets/img/img_evx/evx_v5_3.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add before:content-['\eb22']"></i></a></figure>
+                    <!-- /.project-details -->
+                  </div>
+                  <!--/.swiper-slide -->
+                  <div class="swiper-slide group">
+                    <figure class="!rounded-[.4rem] !mb-6"><img class="!rounded-[.4rem]" src="../../assets/img/img_evx/evx_v6_1.png" srcset="../../assets/img/img_evx/evx_v6_2.png 2x" alt="image"><a class="item-link absolute w-[2.2rem] h-[2.2rem] leading-[2.2rem] z-[1] transition-all duration-[0.3s] ease-in-out opacity-0 text-[#343f52] shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.02)] text-[1rem] flex items-center justify-center rounded-[100%] right-0 bottom-4 bg-[rgba(255,255,255,.7)] hover:bg-[rgba(255,255,255,.9)] hover:!text-[#343f52] group-hover:opacity-100 group-hover:right-[1rem]" href="../../assets/img/img_evx/evx_v6_3.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add before:content-['\eb22']"></i></a></figure>
+                    <!-- /.project-details -->
+                  </div>
+                  <div class="swiper-slide group">
+                    <figure class="!rounded-[.4rem] !mb-6"><img class="!rounded-[.4rem]" src="../../assets/img/img_evx/evx_v7_1.png" srcset="../../assets/img/img_evx/evx_v7_2.png 2x" alt="image"><a class="item-link absolute w-[2.2rem] h-[2.2rem] leading-[2.2rem] z-[1] transition-all duration-[0.3s] ease-in-out opacity-0 text-[#343f52] shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.02)] text-[1rem] flex items-center justify-center rounded-[100%] right-0 bottom-4 bg-[rgba(255,255,255,.7)] hover:bg-[rgba(255,255,255,.9)] hover:!text-[#343f52] group-hover:opacity-100 group-hover:right-[1rem]" href="../../assets/img/img_evx/evx_v7_3.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add before:content-['\eb22']"></i></a></figure>
+                    <!-- /.project-details -->
+                  </div>
+                  <div class="swiper-slide group">
+                    <figure class="!rounded-[.4rem] !mb-6"><img class="!rounded-[.4rem]" src="../../assets/img/img_evx/evx_v8_1.png" srcset="../../assets/img/img_evx/evx_v8_2.png 2x" alt="image"><a class="item-link absolute w-[2.2rem] h-[2.2rem] leading-[2.2rem] z-[1] transition-all duration-[0.3s] ease-in-out opacity-0 text-[#343f52] shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.02)] text-[1rem] flex items-center justify-center rounded-[100%] right-0 bottom-4 bg-[rgba(255,255,255,.7)] hover:bg-[rgba(255,255,255,.9)] hover:!text-[#343f52] group-hover:opacity-100 group-hover:right-[1rem]" href="../../assets/img/img_evx/evx_v8_3.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add before:content-['\eb22']"></i></a></figure>
+
+                    <!-- /.project-details -->
+                  </div>
+                  <!--/.swiper-slide -->
+                </div>
+                <!--/.swiper-wrapper -->
+              </div>
+              <!-- /.swiper -->
+            </div>
+            <!-- /.swiper-container -->
           </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-        <div class="itemgrid mb-14">
-          <div class="flex flex-wrap mx-[-15px] isotope mt-[-30px]">
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-none !rounded-[0.8rem] !bg-[#f0f0f8]">
-                <div class="card-body flex-[1_1_auto] p-[40px]">
-                  <blockquote class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</p>
-                    <div class="flex items-center text-left">
-                      <div class="info !pl-0">
-                        <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">Coriss Ambady</h5>
-                        <p class="!mb-0 text-[.8rem]">Financial Analyst</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-none !rounded-[0.8rem] !bg-[#edf9f6]">
-                <div class="card-body flex-[1_1_auto] p-[40px]">
-                  <blockquote class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Fusce dapibus, tellus ac cursus tortor mauris condimentum fermentum massa justo sit amet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.”</p>
-                    <div class="flex items-center text-left">
-                      <div class="info !pl-0">
-                        <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">Cory Zamora</h5>
-                        <p class="!mb-0 text-[.8rem]">Marketing Specialist</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-none !rounded-[0.8rem] !bg-[#fef4f2]">
-                <div class="card-body flex-[1_1_auto] p-[40px]">
-                  <blockquote class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui consectetur adipiscing elit.”</p>
-                    <div class="flex items-center text-left">
-                      <div class="info !pl-0">
-                        <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">Nikolas Brooten</h5>
-                        <p class="!mb-0 text-[.8rem]">Sales Manager</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-none !rounded-[0.8rem] !bg-[#fbf1f4]">
-                <div class="card-body flex-[1_1_auto] p-[40px]">
-                  <blockquote class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Etiam adipiscing tincidunt elit convallis felis suscipit ut. Phasellus rhoncus tincidunt auctor. Nullam eu sagittis mauris. Donec non dolor ac elit aliquam tincidunt at at sapien. Aenean tortor libero condimentum ac laoreet vitae.”</p>
-                    <div class="flex items-center text-left">
-                      <div class="info !pl-0">
-                        <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">Coriss Ambady</h5>
-                        <p class="!mb-0 text-[.8rem]">Financial Analyst</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-none !rounded-[0.8rem] !bg-[#edf2fc]">
-                <div class="card-body flex-[1_1_auto] p-[40px]">
-                  <blockquote class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus magnis dis montes, nascetur ridiculus mus. Donec sed odio dui. Nulla vitae elit libero a pharetra.”</p>
-                    <div class="flex items-center text-left">
-                      <div class="info !pl-0">
-                        <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">Jackie Sanders</h5>
-                        <p class="!mb-0 text-[.8rem]">Investment Planner</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-            <div class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]">
-              <div class="card !shadow-none !rounded-[0.8rem] !bg-[#fff8ee]">
-                <div class="card-body flex-[1_1_auto] p-[40px]">
-                  <blockquote class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]">
-                    <p>“Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.”</p>
-                    <div class="flex items-center text-left">
-                      <div class="info !pl-0">
-                        <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">Laura Widerski</h5>
-                        <p class="!mb-0 text-[.8rem]">Sales Specialist</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- /.card-body -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!--/column -->
-          </div>
-          <!-- /.row -->
-        </div>
+        </section>
+        <!-- /section -->
         <!-- /.grid-view -->
       </div>
       <!-- /.container -->
@@ -633,8 +607,8 @@
           <div class="md:w-10/12 md:!ml-[8.33333333%] lg:!ml-0 lg:w-6/12 xl:!ml-0 xl:w-5/12 w-full flex-[0_0_auto] max-w-full !relative mt-[50px]">
             <img src="./assets/img/svg/doodle2.svg" class="!h-[5rem] !absolute hidden xl:block lg:block" style="bottom: 36%; right: -25%" alt="image">
             <img src="./assets/img/svg/doodle6.svg" class="!h-[4.5rem] !absolute hidden xl:block lg:block" style="top: -20%; left: -25%" alt="image">
-            <h2 class="text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] xl:text-[2rem] mb-4">Manage all your bills, accounts & budgets in <span class="text-gradient gradient-7">one place.</span></h2>
-            <p class="lead !text-[1.2rem] !leading-[1.5] font-normal mb-7">Sandbox is available to download from both App Store and Google Play Store.</p>
+            <h2 class="text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] xl:text-[2rem] mb-4">DOWNLOAD APP NOW!</span></h2>
+            <p class="lead !text-[1.2rem] !leading-[1.5] font-normal mb-7">EVX is available to download from both App Store and Google Play Store.</p>
             <div class="flex justify-center xl:!justify-start lg:!justify-start">
               <span class="inline-flex"><a href="#" class="!mr-2 inline-block"><img src="./assets/img/photos/button-appstore.svg" class="!h-[3rem] !rounded-[0.8rem]" alt="image"></a></span>
               <span class="inline-flex"><a href="#" class="inline-block"><img src="./assets/img/photos/button-google-play.svg" class="!h-[3rem] !rounded-[0.8rem]" alt="image"></a></span>
@@ -642,7 +616,7 @@
           </div>
           <!-- /column -->
           <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] max-w-full ml-auto mt-lg-n15 xl:!mt-[-10rem] lg:!mt-[-5rem] mt-[50px]">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/photos/devices6.png" srcset="./assets/img/photos/devices6@2x.png 2x" alt="image"></figure>
+            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/evx_1.png" srcset="./assets/img/img_evx/evx_1.png 2x" alt="image"></figure>
           </div>
           <!-- /column -->
         </div>
@@ -658,8 +632,7 @@
       <div class="flex flex-wrap mx-[-15px] mt-[-30px] xl:mt-0 lg:mt-0">
         <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
           <div class="widget">
-            <img class="!mb-4" src="./assets/img/logo-dark.png" srcset="./assets/img/logo-dark@2x.png 2x" alt="image">
-            <p class="!mb-4">© 2024 Sandbox. <br class="hidden xl:block lg:block">All rights reserved.</p>
+            <img class="!mb-4" src="./assets/img/logo_EVX.png" srcset="./assets/img/logo_EVX@2x.png 2x" alt="image">
             <nav class="nav social">
               <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-[#5daed5] text-[1rem]"></i></a>
               <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-[#4470cf] text-[1rem]"></i></a>
@@ -676,22 +649,12 @@
           <div class="widget">
             <h4 class="widget-title !mb-3">Get in Touch</h4>
             <address class="xl:pr-[4rem] xxl:!pr-[5rem] not-italic leading-[inherit] block mb-4">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-            <a class="text-[#60697b] hover:text-[#60697b]" href="mailto:first.last@email.com">info@email.com</a><br> 00 (123) 456 78 90
+            <a class="text-[#60697b] hover:text-[#60697b]" href="mailto:first.last@email.com">evx@email.com</a><br> 099-335-0709
           </div>
           <!-- /.widget -->
         </div>
         <!-- /column -->
         <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
-          <div class="widget">
-            <h4 class="widget-title !mb-3">Learn More</h4>
-            <ul class="pl-0 list-none !mb-0">
-              <li><a class="text-[#60697b] hover:text-[#605dba]" href="#">About Us</a></li>
-              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#">Our Story</a></li>
-              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#">Projects</a></li>
-              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#">Terms of Use</a></li>
-              <li class="mt-[0.35rem]"><a class="text-[#60697b] hover:text-[#605dba]" href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
           <!-- /.widget -->
         </div>
         <!-- /column -->
@@ -738,6 +701,7 @@
   </div>
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
