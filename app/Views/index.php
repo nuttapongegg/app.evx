@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./assets/css/colors/grape.css">
   <link rel="preload" href="./assets/css/fonts/space.css" as="style" onload="this.rel='stylesheet'">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
   <style>
     .active>.page-link,
     .page-link.active,
@@ -42,6 +43,10 @@
     .feature-content.active {
       display: block;
     }
+
+    * {
+      font-family: 'Kanit', sans-serif;
+    }
   </style>
 </head>
 
@@ -65,7 +70,7 @@
               <div class="offcanvas-footer xl:hidden lg:hidden">
                 <div>
                   <a href="mailto:first.last@email.com" class="link-inverse">evx@email.com</a>
-                  <br> 099-335-0709 <br>
+                  <br> +856 20 55 756 565 <br>
                   <nav class="nav social social-white mt-4">
                     <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i></a>
                     <a class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i></a>
@@ -113,8 +118,8 @@
           <!-- /.widget -->
           <div class="widget mb-8">
             <h4 class="widget-title text-white mb-[0.75rem] !text-[.95rem] !leading-[1.45]">Contact Info</h4>
-            <address class=" not-italic leading-[inherit] mb-[1rem]"> Moonshine St. 14/05 <br> Light City, London </address>
-            <a class="text-[#cacaca] hover:!text-[#605dba]" href="mailto:first.last@email.com">evx@email.com</a><br> 099-335-0709
+            <address class=" not-italic leading-[inherit] mb-[1rem]"> Kamphengmeuang Rd, <br> Vientiane, Laos </address>
+            <a class="text-[#cacaca] hover:!text-[#605dba]" href="mailto:first.last@email.com">evx@email.com</a><br> +856 20 55 756 565
           </div>
           <!-- /.widget -->
           <div class="widget mb-8">
@@ -181,58 +186,7 @@
     <!-- /section -->
     <section class="wrapper !bg-[#ffffff]">
       <div class="container pt-32 xl:pt-40 lg:pt-40 md:pt-40 pb-[4.5rem] xl:pb-24 lg:pb-24 md:pb-24">
-        <div class="flex flex-wrap mx-[-15px] !text-center">
-          <div class="lg:w-10/12 xl:w-9/12 xxl:w-8/12 flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
-            <img src="./assets/img/svg/doodle3.svg" class="!h-[3rem] absolute hidden xl:block lg:block" style="top: -45%; left: 23%" alt="image">
-            <img src="./assets/img/svg/doodle4.svg" class="h-8 absolute hidden xl:block lg:block" style="top: 6%; right: 2%" alt="image">
-            <h2 class="text-[0.8rem] !leading-[1.35] tracking-[0.02rem] uppercase text-[#aab0bc] !mb-3">App Features</h2>
-            <h3 class="xl:text-[2rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6">EVX ทำให้การชาร์จรถยนต์ไฟฟ้าของคุณง่ายขึ้น และสามารถวางแผนการเดินทางได้สะดวกสบายยิ่งขึ้น.</h3>
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-        <div class="flex flex-wrap mx-[-15px] mb-40">
-          <div class="xxl:w-11/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
-            <div class="flex flex-wrap mx-[-15px] xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] mt-[-50px] !text-center">
-              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
-                <div class="svg-bg svg-bg-lg !bg-[#fef3e4] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/cloud-network-2.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">อัปเดตอยู่เสมอ</h4>
-              </div>
-              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
-                <div class="svg-bg svg-bg-lg bg-[#e1f6f0] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/touchscreen.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">ใช้งานง่าย</h4>
-              </div>
-              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
-                <div class="svg-bg svg-bg-lg bg-[#e9eaf8] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/lock.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">การชำระเงินที่ปลอดภัย</h4>
-              </div>
-              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
-                <div class="svg-bg svg-bg-lg !bg-[#eaf3ef] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/checked.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">24/7 Support</h4>
-              </div>
-              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
-                <div class="svg-bg svg-bg-lg bg-[#f8e7ec] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/rocket.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">Fast Transactions</h4>
-              </div>
-              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
-                <div class="svg-bg svg-bg-lg bg-[#f0eaf6] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/bar-chart.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">Reports & Forecasting</h4>
-              </div>
-              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
-                <div class="svg-bg svg-bg-lg bg-[#feece9] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/safe.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">Online Banking</h4>
-              </div>
-              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
-                <div class="svg-bg svg-bg-lg bg-[#e0e9fa] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/controls.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">Configurable Fields</h4>
-              </div>
-              <!--/column -->
-            </div>
-            <!--/.row -->
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
+
         <div class="flex flex-wrap mx-[-15px] !text-center">
           <div class="md:w-10/12 lg:w-7/12 xl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
             <img src="./assets/img/svg/doodle5.svg" class="!w-[5rem] absolute hidden xl:block lg:block" data-delay="1800" style="bottom: -60%; right: 10%" alt="image">
@@ -243,7 +197,7 @@
           <!-- /column -->
         </div>
         <!-- /.row -->
-        <div class="flex flex-wrap mx-[-15px] lg:!mb-40 xl:!mb-[17.5rem]">
+        <div class="flex flex-wrap mx-[-15px] mb-40">
           <div class="xxl:w-11/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
             <div class="flex flex-wrap mx-[-15px] mt-[-50px] xl:mt-0 lg:mt-0 !text-center items-center">
               <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto mb-[-2.5rem] lg:!mb-0 xl:!mb-0 mt-[50px] xl:mt-0 lg:mt-0">
@@ -287,121 +241,183 @@
           <!-- /column -->
         </div>
         <!-- /.row -->
+        <div class="flex flex-wrap mx-[-15px] !text-center">
+          <div class="lg:w-10/12 xl:w-9/12 xxl:w-8/12 flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
+            <img src="./assets/img/svg/doodle3.svg" class="!h-[3rem] absolute hidden xl:block lg:block" style="top: -45%; left: -2%" alt="image">
+            <img src="./assets/img/svg/doodle4.svg" class="h-8 absolute hidden xl:block lg:block" style="top: 6%; right: 2%" alt="image">
+            <h2 class="text-[0.8rem] !leading-[1.35] tracking-[0.02rem] uppercase text-[#aab0bc] !mb-3">App Features</h2>
+            <h3 class="xl:text-[1.9rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6">EVX ทำให้การชาร์จรถยนต์ไฟฟ้าของคุณง่ายขึ้น และสามารถวางแผนการเดินทางได้สะดวกสบายยิ่งขึ้น.</h3>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="flex flex-wrap mx-[-15px] lg:!mb-40 xl:!mb-[17.5rem]">
+          <div class="xxl:w-11/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
+            <div class="flex flex-wrap mx-[-15px] xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] mt-[-50px] !text-center">
+              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                <div class="svg-bg svg-bg-lg bg-[#e1f6f0] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/touchscreen.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
+                <h4 class="text-[1rem]">ใช้งานง่าย</h4>
+              </div>
+              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                <div class="svg-bg svg-bg-lg bg-[#f0eaf6] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/search.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
+                <h4 class="text-[1rem]">ค้นหาสถานีชาร์จได้ง่ายดาย</h4>
+              </div>
+              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                <div class="svg-bg svg-bg-lg bg-[#e9eaf8] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/lock.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
+                <h4 class="text-[1rem]">การชำระเงินที่ปลอดภัย</h4>
+              </div>
+              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                <div class="svg-bg svg-bg-lg bg-[#feece9] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/lineal/earth.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
+                <h4 class="text-[1rem]">วางแผนการเดินทางที่ราบรื่น</h4>
+              </div>
+              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                <div class="svg-bg svg-bg-lg bg-[#f8e7ec] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/monitor.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
+                <h4 class="text-[1rem]">เช็คสถานะแบบเรียลไทม์</h4>
+              </div>
+              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                <div class="svg-bg svg-bg-lg bg-[#e0e9fa] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/note.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
+                <h4 class="text-[1rem]">เช็คประวัติการชาร์จได้รวดเร็ว</h4>
+              </div>
+              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                <div class="svg-bg svg-bg-lg !bg-[#fef3e4] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/cloud-network-2.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
+                <h4 class="text-[1rem]">อัปเดตอยู่เสมอ</h4>
+              </div>
+              <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
+                <div class="svg-bg svg-bg-lg !bg-[#eaf3ef] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/lineal/telephone-3.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
+                <h4 class="text-[1rem]">24/7 Support</h4>
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /section -->
-    <section class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600 bg-content [background-size:100%] bg-[center_center] bg-no-repeat bg-scroll relative z-0 before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0 before:bg-[rgba(255,255,255,.6)]" data-image-src="./assets/img/photos/bg23.png">
+    <section class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600 bg-content bg-[center_center] bg-no-repeat bg-scroll relative z-0 before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0 before:bg-[rgba(255,255,255,.6)]" data-image-src="./assets/img/photos/bg23.png">
       <div class="container py-[4.5rem] md:pt-24 lg:pt-0 xl:pt-0 xl:pb-[7rem] lg:pb-[7rem] md:pb-[7rem] !relative" style="z-index: 2;">
         <div class="flex flex-wrap mx-[-15px]">
           <div class="xl:w-11/12 xxl:w-10/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto">
             <div class="lg:mt-[-10rem] xl:!mt-[-15rem] !mb-[4.5rem] xl:!mb-[6rem] lg:!mb-[6rem] md:!mb-[6rem] !rounded-[0.8rem]">
-              <div class="player relative z-[2] rounded-[0.4rem]" data-plyr-provider="vimeo" data-plyr-embed-id="165101721"></div>
+              <div class="player relative z-[2] rounded-[0.4rem]" data-plyr-provider="youtube" data-plyr-embed-id="dVS517dEv_E"></div>
             </div>
-            <div class="!relative">
-              <img src="./assets/img/svg/doodle7.svg" class="h-7 absolute hidden xl:block lg:block" data-delay="1800" style="top: -90%; right: -3%" alt="image">
-              <img src="./assets/img/svg/doodle8.svg" class="!h-[4.5rem] absolute hidden xl:block lg:block" data-delay="1800" style="top: -20%; left: -12%" alt="image">
-              <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]">คำถามที่พบบ่อย</h2>
-              <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-12 lg:!px-8 xl:!px-12 !text-center">หากคุณไม่เห็น<span class="text-gradient gradient-7">คำตอบ</span>สำหรับคำถามของคุณ คุณสามารถส่งอีเมลถึงเราจากแบบฟอร์มติดต่อของเรา</h3>
-            </div>
-            <div class="flex flex-wrap mx-[-15px]">
-              <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mb-0">
-                <div id="accordion-1" class="accordion-wrapper">
-                  <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                    <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-1">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-1" aria-expanded="false" aria-controls="accordion-collapse-1-1">สามารถชาร์จรถยนต์ไฟฟ้าระหว่างฝนตกได้ไหม?</button>
-                    </div>
-                    <!-- /.card-header -->
-                    <div id="accordion-collapse-1-1" class="collapse" aria-labelledby="accordion-heading-1-1" data-bs-target="#accordion-1">
-                      <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>โดยปกติรถยนต์พลังงานไฟฟ้าจะมีมาตรฐานความปลอดภัยสูงสุด ระบบไฟฟ้าภายในตัวรถจะได้รับการปิดสนิท และกันน้ำเข้าเป็นอย่างดี ทำให้มั่นใจได้ว่าผู้ใช้งานรถ EV จะได้รับความปลอดภัย เพราะเป็นไปตามมาตรฐานสากล IP54 โดยไม่ต้องกังวลว่าจะเกิดไฟฟ้าลัดวงจรหรือไฟฟ้ารั่ว เพราะตัวเครื่องจะตัดไฟอัตโนมัติ และมี Safety ก่อนอัดประจุเข้าไปในตัวรถ.</p>
-                      </div>
-                      <!-- /.card-body -->
-                    </div>
-                    <!-- /.collapse -->
-                  </div>
-                  <!-- /.card -->
-                  <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                    <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-2">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-2" aria-expanded="false" aria-controls="accordion-collapse-1-2">การชาร์จ ใช้เวลานานแค่ไหน?</button>
-                    </div>
-                    <!-- /.card-header -->
-                    <div id="accordion-collapse-1-2" class="collapse" aria-labelledby="accordion-heading-1-2" data-bs-target="#accordion-1">
-                      <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>ใช้เวลาประมาณ 30 นาที – 1 ชั่วโมง.</p>
-                      </div>
-                      <!-- /.card-body -->
-                    </div>
-                    <!-- /.collapse -->
-                  </div>
-                  <!-- /.card -->
-                  <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                    <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-3">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-3" aria-expanded="false" aria-controls="accordion-collapse-1-3">ฉันจะ “ขอเงินคืน” จากที่เติมไปได้หรือไม่?</button>
-                    </div>
-                    <!-- /.card-header -->
-                    <div id="accordion-collapse-1-3" class="collapse" aria-labelledby="accordion-heading-1-3" data-bs-target="#accordion-1">
-                      <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>ปัจจุบันระบบยังไม่รองรับการ “คืนเงิน” ที่ท่านได้เติมไว้ในระบบได้.</p>
-                      </div>
-                      <!-- /.card-body -->
-                    </div>
-                    <!-- /.collapse -->
-                  </div>
-                  <!-- /.card -->
-                </div>
-                <!-- /.accordion-wrapper -->
+            <div class="flex flex-wrap mx-[-15px] !text-center">
+              <div class="md:w-11/12 lg:w-9/12 xl:w-8/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
+                <img src="./assets/img/svg/doodle10.svg" class="h-7 absolute hidden xl:block lg:block" style="top: -40%; left: -17%" alt="image">
+                <img src="./assets/img/svg/doodle7.svg" class="h-7 absolute hidden xl:block lg:block" data-delay="1800" style="top: -90%; right: -38%" alt="image">
+                <img src="./assets/img/svg/doodle1.svg" class="h-9 !absolute hidden xl:block lg:block" style="top: 5%; left: 20%" alt="image">
+                <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]">วิธีการใช้งาน EVX?</h2>
+                <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-12 lg:!px-8 xl:!px-12 !text-center">วิธีการใช้งาน EVX</h3>
               </div>
-              <!--/column -->
-              <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full">
-                <div id="accordion-2" class="accordion-wrapper">
-                  <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                    <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-1">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-1" aria-expanded="false" aria-controls="accordion-collapse-2-1">Application ชื่ออะไร และ ดาวน์โหลดได้จากที่ไหน?</button>
-                    </div>
-                    <!-- /.card-header -->
-                    <div id="accordion-collapse-2-1" class="collapse" aria-labelledby="accordion-heading-2-1" data-bs-target="#accordion-2">
-                      <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>Application “EVX” สามารถดาวน์โหลดแอปพลิเคชั่น “EVX” ได้จาก Google Play (สำหรับ Andriod) หรือ App Store (สำหรับ ios).</p>
-                      </div>
-                      <!-- /.card-body -->
-                    </div>
-                    <!-- /.collapse -->
-                  </div>
-                  <!-- /.card -->
-                  <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                    <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-2">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-2" aria-expanded="false" aria-controls="accordion-collapse-2-2">อัตราค่าบริการคิดอย่างไร?</button>
-                    </div>
-                    <!-- /.card-header -->
-                    <div id="accordion-collapse-2-2" class="collapse" aria-labelledby="accordion-heading-2-2" data-bs-target="#accordion-2">
-                      <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>อัตราค่าบริการแต่ละสถานีชาร์จจะไม่เท่ากัน โดยสามารถตรวจสอบผ่านแอปพลิเคชั่น EVX ได้.</p>
-                      </div>
-                      <!-- /.card-body -->
-                    </div>
-                    <!-- /.collapse -->
-                  </div>
-                  <!-- /.card -->
-                  <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
-                    <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-3">
-                      <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-3" aria-expanded="false" aria-controls="accordion-collapse-2-3">ทำอย่างไร หากเติมเงินแล้วแต่เงินไม่เข้าระบบ App?</button>
-                    </div>
-                    <!-- /.card-header -->
-                    <div id="accordion-collapse-2-3" class="collapse" aria-labelledby="accordion-heading-2-3" data-bs-target="#accordion-2">
-                      <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                        <p>ตรวจสอบว่าระบบหักเงินจากบัญชีจริงหรือไม่ หากระบบหักเงินจริงให้รีเฟรชแอปใหม่อีกครั้ง ถ้าหากเงินไม่เข้าระบบจริงให้ติดต่อเจ้าหน้าที่.</p>
-                      </div>
-                      <!-- /.card-body -->
-                    </div>
-                    <!-- /.collapse -->
-                  </div>
-                  <!-- /.card -->
-                </div>
-                <!-- /.accordion-wrapper -->
-              </div>
-              <!--/column -->
+              <!-- /column -->
             </div>
+            <!-- /.row -->
+            <div class="flex-wrap mx-[-15px] flex items-start">
+              <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="1" style="top: 8rem;">
+                <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395408180.png" srcset="./assets/img/img_evx/mmexport1719395408180.png 2x" alt="image"></figure>
+              </div>
+              <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="2" style="top: 8rem;">
+                <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395409979.png" srcset="./assets/img/img_evx/mmexport1719395409979.png 2x" alt="image"></figure>
+              </div>
+              <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="3" style="top: 8rem;">
+                <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395416427.png" srcset="./assets/img/img_evx/mmexport1719395416427.png 2x" alt="image"></figure>
+              </div>
+              <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="4" style="top: 8rem;">
+                <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395428031.png" srcset="./assets/img/img_evx/mmexport1719395428031.png 2x" alt="image"></figure>
+              </div>
+              <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="5" style="top: 8rem;">
+                <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395424620.png" srcset="./assets/img/img_evx/mmexport1719395424620.png 2x" alt="image"></figure>
+              </div>
+              <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="6" style="top: 8rem;">
+                <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395426292.png" srcset="./assets/img/img_evx/mmexport1719395426292.png 2x" alt="image"></figure>
+              </div>
+              <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="7" style="top: 8rem;">
+                <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395418708.png" srcset="./assets/img/img_evx/mmexport1719395418708.png 2x" alt="image"></figure>
+              </div>
+              <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="8" style="top: 8rem;">
+                <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395422836.png" srcset="./assets/img/img_evx/mmexport1719395422836.png 2x" alt="image"></figure>
+              </div>
+              <!-- /column -->
+              <div class="xl:w-8/12 lg:w-5/12 w-full flex-[0_0_auto] px-[15px] max-w-full ml-auto">
+                <div class="flex flex-row !mb-8 feature" id="feature_1">
+                  <div>
+                    <div class="svg-bg svg-bg-lg bg-[#e6e5f4] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/lock.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-[1rem]">เข้าสู่ระบบ</h4>
+                    <p>กรอก Email และ Password เพิ่มทำการเข้าสู่ระบบ EVX.</p>
+                  </div>
+                </div>
+                <div class="flex flex-row !mb-8 feature" id="feature_2">
+                  <div>
+                    <div class="svg-bg svg-bg-lg bg-[#e1f6f0] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/search.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-[1rem]">Find your charging point</h4>
+                    <p>Map ทำการแสดงสถานีชาร์จที่มีทั้งหมด คุณสามารถเลือกสถานีชาร์จที่อยู่ไกล้ที่สุด หรือทำการเลือกสถานีชาร์จตามการเดินทาง ทำให้สามารถวางแผนการเดินทางได้สะดวกสบาย.</p>
+                  </div>
+                </div>
+                <div class="flex flex-row !mb-8 feature" id="feature_3">
+                  <div>
+                    <div class="svg-bg svg-bg-lg bg-[#f8e7ec] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/pin.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-[1rem]">Choose your charging point</h4>
+                    <p>เมื่อทำการเลือกสถานีชาร์จ จะแสดงรายละเอียดของสถานีชาร์จ สามารถทำการจองสถานีชาร์จได้ด้วยการกดที่ Schedule และทำการกรอกข้อมูลเพื่อทำการจองสถานีชาร์จ.</p>
+                  </div>
+                </div>
+                <div class="flex flex-row !mb-8 feature" id="feature_4">
+                  <div>
+                    <div class="svg-bg svg-bg-lg !bg-[#fef3e4] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/server.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-[1rem]">Booking</h4>
+                    <p>แสดงรายการที่ทำการจอง และรายละเอียดของรายการจองเช่น วันที่จอง เวลาที่จอง และสามารถยกเลิกรายการจองได้ด้วยการกดที่ Cancel.</p>
+                  </div>
+                </div>
+                <div class="flex flex-row !mb-8 feature" id="feature_5">
+                  <div>
+                    <div class="svg-bg svg-bg-lg bg-[#e0e9fa] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/setting.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-[1rem]">Profile</h4>
+                    <p>สามารถแก้ไขชื่อ และEmailได้ด้วยการกดที่ ชื่อหรือEmail และสามารถกดเพื่อเข้าใช้งาน Feature ต่างๆเช่น My Wallet, Saved charging station, Payment methods, Charding reminder หรือ Log out.</p>
+                  </div>
+                </div>
+                <div class="flex flex-row !mb-8 feature" id="feature_6">
+                  <div>
+                    <div class="svg-bg svg-bg-lg !bg-[#eaf3ef] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/wallet.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-[1rem]">My Wallet</h4>
+                    <p>แสดงประวัติการทำรายการ Credit, Debit และแสดงยอดเงินคงเหลือปัจจุบัน ถ้าต้องการเติมเงินเข้าบัญชีสามารถทำได้ด้วยการกดที่ Add money.</p>
+                  </div>
+                </div>
+                <div class="flex flex-row !mb-8 feature" id="feature_7">
+                  <div>
+                    <div class="svg-bg svg-bg-lg !bg-[#fbe7f3] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/dot.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-[1rem]">QR Scaner</h4>
+                    <p>สแกน QR Code ที่หน้าจอตู้ชาร์จ เพื่อเริ่มทำการชาร์จ.</p>
+                  </div>
+                </div>
+                <div class="flex flex-row !mb-8 feature" id="feature_8">
+                  <div>
+                    <div class="svg-bg svg-bg-lg !bg-[#feece9] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/content.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-[1rem]">Reschedule</h4>
+                    <p>แสดงรายละเอียดเกี่ยวกับ การชาร์จที่กำลังดำเนินการอยู่ เช่น เวลาที่ใช้ในการชาร์จ, เปอร์เซ็นต์แบตเตอรี่.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
             <!--/.row -->
           </div>
           <!--/column -->
@@ -413,119 +429,110 @@
     <!-- /section -->
     <section class="wrapper !bg-[#ffffff]">
       <div class="container py-24 xl:!py-[8rem] lg:!py-[8rem] md:!py-[8rem]">
-        <div class="flex flex-wrap mx-[-15px] !text-center">
-          <div class="md:w-11/12 lg:w-9/12 xl:w-8/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
-            <img src="./assets/img/svg/doodle3.svg" class="!h-[3rem] absolute hidden xl:block lg:block" style="top: -20%; right: -12%" alt="image">
-            <img src="./assets/img/svg/doodle9.svg" class="!h-[7rem] absolute hidden xl:block lg:block" style="bottom: 5%; left: -17%" alt="image">
-            <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]">วิธีการใช้งาน EVX?</h2>
-            <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-14 !text-center">วิธีการใช้งาน EVX</h3>
-          </div>
-          <!-- /column -->
+        <div class="!relative">
+          <img src="./assets/img/svg/doodle3.svg" class="!h-[3rem] absolute hidden xl:block lg:block" style="top: -30%; right: -2%" alt="image">
+          <img src="./assets/img/svg/doodle9.svg" class="!h-[7rem] absolute hidden xl:block lg:block" style="bottom: 15%; left: -7%" alt="image">
+          <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]">คำถามที่พบบ่อย</h2>
+          <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-14 !text-center">หากคุณไม่เห็น<span class="text-gradient gradient-7">คำตอบ</span>สำหรับคำถามของคุณ คุณสามารถส่งอีเมลถึงเราจากแบบฟอร์มติดต่อของเรา</h3>
         </div>
-        <!-- /.row -->
-        <div class="flex-wrap mx-[-15px] flex items-start mb-24">
-          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="1" style="top: 8rem;">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395408180.png" srcset="./assets/img/img_evx/mmexport1719395408180.png 2x" alt="image"></figure>
-          </div>
-          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="2" style="top: 8rem;">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395409979.png" srcset="./assets/img/img_evx/mmexport1719395409979.png 2x" alt="image"></figure>
-          </div>
-          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="3" style="top: 8rem;">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395416427.png" srcset="./assets/img/img_evx/mmexport1719395416427.png 2x" alt="image"></figure>
-          </div>
-          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="4" style="top: 8rem;">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395428031.png" srcset="./assets/img/img_evx/mmexport1719395428031.png 2x" alt="image"></figure>
-          </div>
-          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="5" style="top: 8rem;">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395424620.png" srcset="./assets/img/img_evx/mmexport1719395424620.png 2x" alt="image"></figure>
-          </div>
-          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="6" style="top: 8rem;">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395426292.png" srcset="./assets/img/img_evx/mmexport1719395426292.png 2x" alt="image"></figure>
-          </div>
-          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="7" style="top: 8rem;">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395418708.png" srcset="./assets/img/img_evx/mmexport1719395418708.png 2x" alt="image"></figure>
-          </div>
-          <div class="xl:w-3/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky feature-content" id="8" style="top: 8rem;">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./assets/img/img_evx/mmexport1719395422836.png" srcset="./assets/img/img_evx/mmexport1719395422836.png 2x" alt="image"></figure>
-          </div>
-          <!-- /column -->
-          <div class="xl:w-8/12 lg:w-5/12 w-full flex-[0_0_auto] px-[15px] max-w-full ml-auto">
-            <div class="flex flex-row !mb-8 feature" id="feature_1">
-              <div>
-                <div class="svg-bg svg-bg-lg bg-[#e6e5f4] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/lock.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
+        <div class="flex flex-wrap mx-[-15px] mb-24">
+          <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mb-0">
+            <div id="accordion-1" class="accordion-wrapper">
+              <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
+                <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-1">
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-1" aria-expanded="false" aria-controls="accordion-collapse-1-1">สามารถชาร์จรถยนต์ไฟฟ้าระหว่างฝนตกได้ไหม?</button>
+                </div>
+                <!-- /.card-header -->
+                <div id="accordion-collapse-1-1" class="collapse" aria-labelledby="accordion-heading-1-1" data-bs-target="#accordion-1">
+                  <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
+                    <p>โดยปกติรถยนต์พลังงานไฟฟ้าจะมีมาตรฐานความปลอดภัยสูงสุด ระบบไฟฟ้าภายในตัวรถจะได้รับการปิดสนิท และกันน้ำเข้าเป็นอย่างดี ทำให้มั่นใจได้ว่าผู้ใช้งานรถ EV จะได้รับความปลอดภัย เพราะเป็นไปตามมาตรฐานสากล IP54 โดยไม่ต้องกังวลว่าจะเกิดไฟฟ้าลัดวงจรหรือไฟฟ้ารั่ว เพราะตัวเครื่องจะตัดไฟอัตโนมัติ และมี Safety ก่อนอัดประจุเข้าไปในตัวรถ.</p>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.collapse -->
               </div>
-              <div>
-                <h4 class="text-[1rem]">เข้าสู่ระบบ</h4>
-                <p>กรอก Email และ Password เพิ่มทำการเข้าสู่ระบบ EVX.</p>
+              <!-- /.card -->
+              <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
+                <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-2">
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-2" aria-expanded="false" aria-controls="accordion-collapse-1-2">การชาร์จ ใช้เวลานานแค่ไหน?</button>
+                </div>
+                <!-- /.card-header -->
+                <div id="accordion-collapse-1-2" class="collapse" aria-labelledby="accordion-heading-1-2" data-bs-target="#accordion-1">
+                  <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
+                    <p>ใช้เวลาประมาณ 30 นาที – 1 ชั่วโมง.</p>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.collapse -->
               </div>
+              <!-- /.card -->
+              <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
+                <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-3">
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-3" aria-expanded="false" aria-controls="accordion-collapse-1-3">ฉันจะ “ขอเงินคืน” จากที่เติมไปได้หรือไม่?</button>
+                </div>
+                <!-- /.card-header -->
+                <div id="accordion-collapse-1-3" class="collapse" aria-labelledby="accordion-heading-1-3" data-bs-target="#accordion-1">
+                  <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
+                    <p>ปัจจุบันระบบยังไม่รองรับการ “คืนเงิน” ที่ท่านได้เติมไว้ในระบบได้.</p>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.card -->
             </div>
-            <div class="flex flex-row !mb-8 feature" id="feature_2">
-              <div>
-                <div class="svg-bg svg-bg-lg bg-[#e1f6f0] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/search.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
-              </div>
-              <div>
-                <h4 class="text-[1rem]">Find your charging point</h4>
-                <p>Map ทำการแสดงสถานีชาร์จที่มีทั้งหมด คุณสามารถเลือกสถานีชาร์จที่อยู่ไกล้ที่สุด หรือทำการเลือกสถานีชาร์จตามการเดินทาง ทำให้สามารถวางแผนการเดินทางได้สะดวกสบาย.</p>
-              </div>
-            </div>
-            <div class="flex flex-row !mb-8 feature" id="feature_3">
-              <div>
-                <div class="svg-bg svg-bg-lg bg-[#f8e7ec] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/pin.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
-              </div>
-              <div>
-                <h4 class="text-[1rem]">Choose your charging point</h4>
-                <p>เมื่อทำการเลือกสถานีชาร์จ จะแสดงรายละเอียดของสถานีชาร์จ สามารถทำการจองสถานีชาร์จได้ด้วยการกดที่ Schedule และทำการกรอกข้อมูลเพื่อทำการจองสถานีชาร์จ.</p>
-              </div>
-            </div>
-            <div class="flex flex-row !mb-8 feature" id="feature_4">
-              <div>
-                <div class="svg-bg svg-bg-lg !bg-[#fef3e4] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/server.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
-              </div>
-              <div>
-                <h4 class="text-[1rem]">Booking</h4>
-                <p>แสดงรายการที่ทำการจอง และรายละเอียดของรายการจองเช่น วันที่จอง เวลาที่จอง และสามารถยกเลิกรายการจองได้ด้วยการกดที่ Cancel.</p>
-              </div>
-            </div>
-            <div class="flex flex-row !mb-8 feature" id="feature_5">
-              <div>
-                <div class="svg-bg svg-bg-lg bg-[#e0e9fa] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/setting.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
-              </div>
-              <div>
-                <h4 class="text-[1rem]">Profile</h4>
-                <p>สามารถแก้ไขชื่อ และEmailได้ด้วยการกดที่ ชื่อหรือEmail และสามารถกดเพื่อเข้าใช้งาน Feature ต่างๆเช่น My Wallet, Saved charging station, Payment methods, Charding reminder หรือ Log out.</p>
-              </div>
-            </div>
-            <div class="flex flex-row !mb-8 feature" id="feature_6">
-              <div>
-                <div class="svg-bg svg-bg-lg !bg-[#eaf3ef] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/wallet.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
-              </div>
-              <div>
-                <h4 class="text-[1rem]">My Wallet</h4>
-                <p>แสดงประวัติการทำรายการ Credit, Debit และแสดงยอดเงินคงเหลือปัจจุบัน ถ้าต้องการเติมเงินเข้าบัญชีสามารถทำได้ด้วยการกดที่ Add money.</p>
-              </div>
-            </div>
-            <div class="flex flex-row !mb-8 feature" id="feature_7">
-              <div>
-                <div class="svg-bg svg-bg-lg !bg-[#fbe7f3] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/dot.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
-              </div>
-              <div>
-                <h4 class="text-[1rem]">QR Scaner</h4>
-                <p>สแกน QR Code ที่หน้าจอตู้ชาร์จ เพื่อเริ่มทำการชาร์จ.</p>
-              </div>
-            </div>
-            <div class="flex flex-row !mb-8 feature" id="feature_8">
-              <div>
-                <div class="svg-bg svg-bg-lg !bg-[#feece9] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/content.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
-              </div>
-              <div>
-                <h4 class="text-[1rem]">Reschedule</h4>
-                <p>แสดงรายละเอียดเกี่ยวกับ การชาร์จที่กำลังดำเนินการอยู่ เช่น เวลาที่ใช้ในการชาร์จ, เปอร์เซ็นต์แบตเตอรี่.</p>
-              </div>
-            </div>
+            <!-- /.accordion-wrapper -->
           </div>
-          <!-- /column -->
+          <!--/column -->
+          <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full">
+            <div id="accordion-2" class="accordion-wrapper">
+              <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
+                <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-1">
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-1" aria-expanded="false" aria-controls="accordion-collapse-2-1">Application ชื่ออะไร และ ดาวน์โหลดได้จากที่ไหน?</button>
+                </div>
+                <!-- /.card-header -->
+                <div id="accordion-collapse-2-1" class="collapse" aria-labelledby="accordion-heading-2-1" data-bs-target="#accordion-2">
+                  <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
+                    <p>Application “EVX” สามารถดาวน์โหลดแอปพลิเคชั่น “EVX” ได้จาก Google Play (สำหรับ Andriod) หรือ App Store (สำหรับ ios).</p>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.card -->
+              <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
+                <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-2">
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-2" aria-expanded="false" aria-controls="accordion-collapse-2-2">อัตราค่าบริการคิดอย่างไร?</button>
+                </div>
+                <!-- /.card-header -->
+                <div id="accordion-collapse-2-2" class="collapse" aria-labelledby="accordion-heading-2-2" data-bs-target="#accordion-2">
+                  <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
+                    <p>อัตราค่าบริการแต่ละสถานีชาร์จจะไม่เท่ากัน โดยสามารถตรวจสอบผ่านแอปพลิเคชั่น EVX ได้.</p>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.card -->
+              <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
+                <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-3">
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-3" aria-expanded="false" aria-controls="accordion-collapse-2-3">ทำอย่างไร หากเติมเงินแล้วแต่เงินไม่เข้าระบบ App?</button>
+                </div>
+                <!-- /.card-header -->
+                <div id="accordion-collapse-2-3" class="collapse" aria-labelledby="accordion-heading-2-3" data-bs-target="#accordion-2">
+                  <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
+                    <p>ตรวจสอบว่าระบบหักเงินจากบัญชีจริงหรือไม่ หากระบบหักเงินจริงให้รีเฟรชแอปใหม่อีกครั้ง ถ้าหากเงินไม่เข้าระบบจริงให้ติดต่อเจ้าหน้าที่.</p>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.collapse -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.accordion-wrapper -->
+          </div>
+          <!--/column -->
         </div>
-        <!-- /.row -->
         <section class="wrapper !bg-[#ffffff] ">
           <div class="container pt-20 xl:pt-8 lg:pt-8 md:pt-8 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
             <div class="flex flex-wrap mx-[-15px]">
@@ -648,8 +655,8 @@
         <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:mt-0 lg:mt-0 mt-[30px]">
           <div class="widget">
             <h4 class="widget-title !mb-3">Get in Touch</h4>
-            <address class="xl:pr-[4rem] xxl:!pr-[5rem] not-italic leading-[inherit] block mb-4">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-            <a class="text-[#60697b] hover:text-[#60697b]" href="mailto:first.last@email.com">evx@email.com</a><br> 099-335-0709
+            <address class="xl:pr-[4rem] xxl:!pr-[5rem] not-italic leading-[inherit] block mb-4">Kamphengmeuang Rd, Vientiane, Laos</address>
+            <a class="text-[#60697b] hover:text-[#60697b]" href="mailto:first.last@email.com">evx@email.com</a><br> +856 20 55 756 565
           </div>
           <!-- /.widget -->
         </div>
