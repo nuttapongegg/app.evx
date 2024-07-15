@@ -36,6 +36,7 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('loadLang/(:any)', 'LanguageLoader::load/$1');
 // $routes->get('/testimonial', 'Home::testimonial');
 // $routes->get('/new_events', 'Home::new_events');
 

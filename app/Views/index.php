@@ -89,12 +89,11 @@
           <div class="navbar-other w-full !flex !ml-auto">
             <ul class="navbar-nav !flex-row !items-center !ml-auto">
               <li class="nav-item dropdown language-select uppercase group">
-                <a class="nav-link dropdown-item dropdown-toggle after:!text-[#605dba] xl:!text-[.85rem] lg:!text-[.85rem] md:!text-[1.05rem] sm:!text-[1.05rem] xsm:!text-[1.05rem] hover:!text-[#605dba]" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TH</a>
+                <a id="language-dropdown" class="nav-link dropdown-item dropdown-toggle after:!text-[#605dba] xl:!text-[.85rem] lg:!text-[.85rem] md:!text-[1.05rem] sm:!text-[1.05rem] xsm:!text-[1.05rem] hover:!text-[#605dba]" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TH</a>
                 <ul class="dropdown-menu group-hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">
-                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" href="#">TH</a></li>
-                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" href="#">En</a></li>
-                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" href="#">De</a></li>
-                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" href="#">Es</a></li>
+                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" onclick="setLanguage('TH'); return false;" href="#">TH</a></li>
+                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" onclick="setLanguage('EN'); return false;" href="#">EN</a></li>
+                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" onclick="setLanguage('LAO'); return false;" href="#">LAO</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i class="uil uil-info-circle before:content-['\eb99'] !text-[1.1rem] hover:!text-[#605dba]"></i></a></li>
@@ -191,8 +190,8 @@
           <div class="md:w-10/12 lg:w-7/12 xl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !relative">
             <img src="./assets/img/svg/doodle5.svg" class="!w-[5rem] absolute hidden xl:block lg:block" data-delay="1800" style="bottom: -60%; right: 10%" alt="image">
             <img src="./assets/img/svg/doodle6.svg" class="!h-[5rem] !absolute hidden xl:block lg:block" data-delay="1800" style="top: -40%; left: -5%" alt="image">
-            <h2 class="text-[0.8rem] tracking-[0.02rem] uppercase text-[#aab0bc] !mb-3 !leading-[1.35]">เหตุใดจึงควรเลือก EVX?</h2>
-            <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-14 !text-center">ทำความรู้จักกับ EVX</h3>
+            <h2 class="text-[0.8rem] tracking-[0.02rem] uppercase text-[#aab0bc] !mb-3 !leading-[1.35]" id="why_choose"></h2>
+            <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-14 !text-center" id="getting_know"></h3>
           </div>
           <!-- /column -->
         </div>
@@ -209,13 +208,13 @@
                 <div class="!mb-8">
                   <span class="xl:text-[3rem] text-[calc(1.425rem_+_2.1vw)] !leading-none mb-3 font-medium text-gradient gradient-7">01</span>
                   <h4 class="text-[1rem]">EVX?</h4>
-                  <p class="mb-0 xl:!px-7">EVX คือผู้ให้บริการสถานีอัดประจุไฟฟ้าสำหรับยานยนต์ไฟฟ้า ซึ่งมีสถานีประจุไฟฟ้าครอบคลุมทุกพื้นที่.</p>
+                  <p class="mb-0 xl:!px-7" id="evx"></p>
                 </div>
                 <!-- /div -->
                 <div>
                   <span class="xl:text-[3rem] text-[calc(1.425rem_+_2.1vw)] !leading-none mb-3 font-medium text-gradient gradient-7">02</span>
                   <h4 class="text-[1rem]">EVX Application?</h4>
-                  <p class="mb-0 xl:!px-7">EVX Application คือ แอปที่จะมาช่วยอำนวยความสะดวกในการชาร์จรถยนต์ไฟฟ้าของคุณให้มีความสะดวกยิ่งขึ้น และ รวดเร็วมากขึ้น.</p>
+                  <p class="mb-0 xl:!px-7" id="evx_application"></p>
                 </div>
                 <!-- /div -->
               </div>
@@ -223,14 +222,14 @@
               <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[50px] xl:mt-0 lg:mt-0">
                 <div class="!mb-8">
                   <span class="xl:text-[3rem] text-[calc(1.425rem_+_2.1vw)] !leading-none mb-3 font-medium text-gradient gradient-7">03</span>
-                  <h4 class="text-[1rem]">ประเภทเครื่องชาร์จ AC Charger?</h4>
-                  <p class="mb-0 xl:!px-7">AC Charger คือ การชาร์จแบบธรรมดาโดยใช้เวลาชาร์จประมาณ 4 - 16 ชั่วโมง สามารถใช้ได้กับรถ BEV และ PHEV เท่านั้น.</p>
+                  <h4 class="text-[1rem]" id="ac_charger"></h4>
+                  <p class="mb-0 xl:!px-7" id="data_ac_charger"></p>
                 </div>
                 <!-- /div -->
                 <div>
                   <span class="xl:text-[3rem] text-[calc(1.425rem_+_2.1vw)] !leading-none mb-3 font-medium text-gradient gradient-7">04</span>
-                  <h4 class="text-[1rem]">ประเภทเครื่องชาร์จ DC Quick Charger?</h4>
-                  <p class="mb-0 xl:!px-7">DC Quick Charger คือ การชาร์จแบบเร็วโดยใช้เวลาชาร์จประมาณ 15 นาที สามารถใช้ได้กับรถ BEV เท่านั้น.</p>
+                  <h4 class="text-[1rem]" id="dc_charger"></h4>
+                  <p class="mb-0 xl:!px-7" id="data_dc_charger"></p>
                 </div>
                 <!-- /div -->
               </div>
@@ -246,7 +245,7 @@
             <img src="./assets/img/svg/doodle3.svg" class="!h-[3rem] absolute hidden xl:block lg:block" style="top: -45%; left: -2%" alt="image">
             <img src="./assets/img/svg/doodle4.svg" class="h-8 absolute hidden xl:block lg:block" style="top: 6%; right: 2%" alt="image">
             <h2 class="text-[0.8rem] !leading-[1.35] tracking-[0.02rem] uppercase text-[#aab0bc] !mb-3">App Features</h2>
-            <h3 class="xl:text-[1.9rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6">EVX ทำให้การชาร์จรถยนต์ไฟฟ้าของคุณง่ายขึ้น และสามารถวางแผนการเดินทางได้สะดวกสบายยิ่งขึ้น.</h3>
+            <h3 class="xl:text-[1.9rem] text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] mb-12 lg:!px-5 xl:!px-0 xxl:!px-6" id="app_feature"></h3>
           </div>
           <!-- /column -->
         </div>
@@ -256,31 +255,31 @@
             <div class="flex flex-wrap mx-[-15px] xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] mt-[-50px] !text-center">
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#e1f6f0] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/touchscreen.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">ใช้งานง่าย</h4>
+                <h4 class="text-[1rem]" id="feature_easy"></h4>
               </div>
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#f0eaf6] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/search.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">ค้นหาสถานีชาร์จได้ง่ายดาย</h4>
+                <h4 class="text-[1rem]" id="feature_station"></h4>
               </div>
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#e9eaf8] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/lock.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">การชำระเงินที่ปลอดภัย</h4>
+                <h4 class="text-[1rem]" id="feature_payment"></h4>
               </div>
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#feece9] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/lineal/earth.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">วางแผนการเดินทางที่ราบรื่น</h4>
+                <h4 class="text-[1rem]" id="feature_plan"></h4>
               </div>
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#f8e7ec] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/monitor.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">เช็คสถานะแบบเรียลไทม์</h4>
+                <h4 class="text-[1rem]" id="feature_status"></h4>
               </div>
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg bg-[#e0e9fa] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/note.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">เช็คประวัติการชาร์จได้รวดเร็ว</h4>
+                <h4 class="text-[1rem]" id="feature_history"></h4>
               </div>
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg !bg-[#fef3e4] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/solid/cloud-network-2.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
-                <h4 class="text-[1rem]">อัปเดตอยู่เสมอ</h4>
+                <h4 class="text-[1rem]" id="feature_updated"></h4>
               </div>
               <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] xl:px-[20px] lg:px-[20px] md:px-[20px] mt-[50px] max-w-full">
                 <div class="svg-bg svg-bg-lg !bg-[#eaf3ef] !rounded-[0.8rem] mb-4"> <img src="./assets/img/icons/lineal/telephone-3.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"> </div>
@@ -309,8 +308,8 @@
                 <img src="./assets/img/svg/doodle10.svg" class="h-7 absolute hidden xl:block lg:block" style="top: -40%; left: -17%" alt="image">
                 <img src="./assets/img/svg/doodle7.svg" class="h-7 absolute hidden xl:block lg:block" data-delay="1800" style="top: -90%; right: -38%" alt="image">
                 <img src="./assets/img/svg/doodle1.svg" class="h-9 !absolute hidden xl:block lg:block" style="top: 5%; left: 20%" alt="image">
-                <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]">วิธีการใช้งาน EVX?</h2>
-                <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-12 lg:!px-8 xl:!px-12 !text-center">วิธีการใช้งาน EVX</h3>
+                <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]" id="how_to_use_header"></h2>
+                <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-12 lg:!px-8 xl:!px-12 !text-center" id="how_to_use_body"></h3>
               </div>
               <!-- /column -->
             </div>
@@ -347,8 +346,8 @@
                     <div class="svg-bg svg-bg-lg bg-[#e6e5f4] !rounded-[0.8rem] mr-5"><img src="./assets/img/icons/solid/lock.svg" class="svg-inject icon-svg solid text-[#343f52] text-navy" alt="image"></div>
                   </div>
                   <div>
-                    <h4 class="text-[1rem]">เข้าสู่ระบบ</h4>
-                    <p>กรอก Email และ Password เพิ่มทำการเข้าสู่ระบบ EVX.</p>
+                    <h4 class="text-[1rem]" id="login"></h4>
+                    <p id="login_detail"></p>
                   </div>
                 </div>
                 <div class="flex flex-row !mb-8 feature" id="feature_2">
@@ -357,7 +356,7 @@
                   </div>
                   <div>
                     <h4 class="text-[1rem]">Find your charging point</h4>
-                    <p>Map ทำการแสดงสถานีชาร์จที่มีทั้งหมด คุณสามารถเลือกสถานีชาร์จที่อยู่ไกล้ที่สุด หรือทำการเลือกสถานีชาร์จตามการเดินทาง ทำให้สามารถวางแผนการเดินทางได้สะดวกสบาย.</p>
+                    <p id="map"></p>
                   </div>
                 </div>
                 <div class="flex flex-row !mb-8 feature" id="feature_3">
@@ -366,7 +365,7 @@
                   </div>
                   <div>
                     <h4 class="text-[1rem]">Choose your charging point</h4>
-                    <p>เมื่อทำการเลือกสถานีชาร์จ จะแสดงรายละเอียดของสถานีชาร์จ สามารถทำการจองสถานีชาร์จได้ด้วยการกดที่ Schedule และทำการกรอกข้อมูลเพื่อทำการจองสถานีชาร์จ.</p>
+                    <p id="charging_point"></p>
                   </div>
                 </div>
                 <div class="flex flex-row !mb-8 feature" id="feature_4">
@@ -375,7 +374,7 @@
                   </div>
                   <div>
                     <h4 class="text-[1rem]">Booking</h4>
-                    <p>แสดงรายการที่ทำการจอง และรายละเอียดของรายการจองเช่น วันที่จอง เวลาที่จอง และสามารถยกเลิกรายการจองได้ด้วยการกดที่ Cancel.</p>
+                    <p id="booking"></p>
                   </div>
                 </div>
                 <div class="flex flex-row !mb-8 feature" id="feature_5">
@@ -384,7 +383,7 @@
                   </div>
                   <div>
                     <h4 class="text-[1rem]">Profile</h4>
-                    <p>สามารถแก้ไขชื่อ และEmailได้ด้วยการกดที่ ชื่อหรือEmail และสามารถกดเพื่อเข้าใช้งาน Feature ต่างๆเช่น My Wallet, Saved charging station, Payment methods, Charding reminder หรือ Log out.</p>
+                    <p id="profile"></p>
                   </div>
                 </div>
                 <div class="flex flex-row !mb-8 feature" id="feature_6">
@@ -393,7 +392,7 @@
                   </div>
                   <div>
                     <h4 class="text-[1rem]">My Wallet</h4>
-                    <p>แสดงประวัติการทำรายการ Credit, Debit และแสดงยอดเงินคงเหลือปัจจุบัน ถ้าต้องการเติมเงินเข้าบัญชีสามารถทำได้ด้วยการกดที่ Add money.</p>
+                    <p id="wallet"></p>
                   </div>
                 </div>
                 <div class="flex flex-row !mb-8 feature" id="feature_7">
@@ -402,7 +401,7 @@
                   </div>
                   <div>
                     <h4 class="text-[1rem]">QR Scaner</h4>
-                    <p>สแกน QR Code ที่หน้าจอตู้ชาร์จ เพื่อเริ่มทำการชาร์จ.</p>
+                    <p id="qr_code"></p>
                   </div>
                 </div>
                 <div class="flex flex-row !mb-8 feature" id="feature_8">
@@ -411,7 +410,7 @@
                   </div>
                   <div>
                     <h4 class="text-[1rem]">Reschedule</h4>
-                    <p>แสดงรายละเอียดเกี่ยวกับ การชาร์จที่กำลังดำเนินการอยู่ เช่น เวลาที่ใช้ในการชาร์จ, เปอร์เซ็นต์แบตเตอรี่.</p>
+                    <p id="reschedule"></p>
                   </div>
                 </div>
               </div>
@@ -432,20 +431,20 @@
         <div class="!relative">
           <img src="./assets/img/svg/doodle3.svg" class="!h-[3rem] absolute hidden xl:block lg:block" style="top: -30%; right: -2%" alt="image">
           <img src="./assets/img/svg/doodle9.svg" class="!h-[7rem] absolute hidden xl:block lg:block" style="bottom: 15%; left: -7%" alt="image">
-          <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]">คำถามที่พบบ่อย</h2>
-          <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-14 !text-center">หากคุณไม่เห็น<span class="text-gradient gradient-7">คำตอบ</span>สำหรับคำถามของคุณ คุณสามารถส่งอีเมลถึงเราจากแบบฟอร์มติดต่อของเรา</h3>
+          <h2 class="text-[0.8rem] uppercase text-[#aab0bc] mb-3 !text-center !leading-[1.35]" id="faq"></h2>
+          <h3 class="text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:text-[2rem] mb-14 !text-center" id="faq_body"></h3>
         </div>
         <div class="flex flex-wrap mx-[-15px] mb-24">
           <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mb-0">
             <div id="accordion-1" class="accordion-wrapper">
               <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                 <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-1">
-                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-1" aria-expanded="false" aria-controls="accordion-collapse-1-1">สามารถชาร์จรถยนต์ไฟฟ้าระหว่างฝนตกได้ไหม?</button>
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-1" aria-expanded="false" aria-controls="accordion-collapse-1-1" id="rain"></button>
                 </div>
                 <!-- /.card-header -->
                 <div id="accordion-collapse-1-1" class="collapse" aria-labelledby="accordion-heading-1-1" data-bs-target="#accordion-1">
                   <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                    <p>โดยปกติรถยนต์พลังงานไฟฟ้าจะมีมาตรฐานความปลอดภัยสูงสุด ระบบไฟฟ้าภายในตัวรถจะได้รับการปิดสนิท และกันน้ำเข้าเป็นอย่างดี ทำให้มั่นใจได้ว่าผู้ใช้งานรถ EV จะได้รับความปลอดภัย เพราะเป็นไปตามมาตรฐานสากล IP54 โดยไม่ต้องกังวลว่าจะเกิดไฟฟ้าลัดวงจรหรือไฟฟ้ารั่ว เพราะตัวเครื่องจะตัดไฟอัตโนมัติ และมี Safety ก่อนอัดประจุเข้าไปในตัวรถ.</p>
+                    <p id="rain_body"></p>
                   </div>
                   <!-- /.card-body -->
                 </div>
@@ -454,12 +453,12 @@
               <!-- /.card -->
               <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                 <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-2">
-                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-2" aria-expanded="false" aria-controls="accordion-collapse-1-2">การชาร์จ ใช้เวลานานแค่ไหน?</button>
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-2" aria-expanded="false" aria-controls="accordion-collapse-1-2" id="charging"></button>
                 </div>
                 <!-- /.card-header -->
                 <div id="accordion-collapse-1-2" class="collapse" aria-labelledby="accordion-heading-1-2" data-bs-target="#accordion-1">
                   <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                    <p>ใช้เวลาประมาณ 30 นาที – 1 ชั่วโมง.</p>
+                    <p id="charging_body"></p>
                   </div>
                   <!-- /.card-body -->
                 </div>
@@ -468,12 +467,12 @@
               <!-- /.card -->
               <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                 <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-1-3">
-                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-3" aria-expanded="false" aria-controls="accordion-collapse-1-3">ฉันจะ “ขอเงินคืน” จากที่เติมไปได้หรือไม่?</button>
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-3" aria-expanded="false" aria-controls="accordion-collapse-1-3" id="request_refund"></button>
                 </div>
                 <!-- /.card-header -->
                 <div id="accordion-collapse-1-3" class="collapse" aria-labelledby="accordion-heading-1-3" data-bs-target="#accordion-1">
                   <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                    <p>ปัจจุบันระบบยังไม่รองรับการ “คืนเงิน” ที่ท่านได้เติมไว้ในระบบได้.</p>
+                    <p id="request_refund_body"></p>
                   </div>
                   <!-- /.card-body -->
                 </div>
@@ -488,12 +487,12 @@
             <div id="accordion-2" class="accordion-wrapper">
               <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                 <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-1">
-                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-1" aria-expanded="false" aria-controls="accordion-collapse-2-1">Application ชื่ออะไร และ ดาวน์โหลดได้จากที่ไหน?</button>
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-1" aria-expanded="false" aria-controls="accordion-collapse-2-1" id="download"></button>
                 </div>
                 <!-- /.card-header -->
                 <div id="accordion-collapse-2-1" class="collapse" aria-labelledby="accordion-heading-2-1" data-bs-target="#accordion-2">
                   <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                    <p>Application “EVX” สามารถดาวน์โหลดแอปพลิเคชั่น “EVX” ได้จาก Google Play (สำหรับ Andriod) หรือ App Store (สำหรับ ios).</p>
+                    <p id="download_body"></p>
                   </div>
                   <!-- /.card-body -->
                 </div>
@@ -502,12 +501,12 @@
               <!-- /.card -->
               <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                 <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-2">
-                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-2" aria-expanded="false" aria-controls="accordion-collapse-2-2">อัตราค่าบริการคิดอย่างไร?</button>
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-2" aria-expanded="false" aria-controls="accordion-collapse-2-2" id="service_rates"></button>
                 </div>
                 <!-- /.card-header -->
                 <div id="accordion-collapse-2-2" class="collapse" aria-labelledby="accordion-heading-2-2" data-bs-target="#accordion-2">
                   <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                    <p>อัตราค่าบริการแต่ละสถานีชาร์จจะไม่เท่ากัน โดยสามารถตรวจสอบผ่านแอปพลิเคชั่น EVX ได้.</p>
+                    <p id="service_rates_body"></p>
                   </div>
                   <!-- /.card-body -->
                 </div>
@@ -516,12 +515,12 @@
               <!-- /.card -->
               <div class="card accordion-item mb-5 !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]">
                 <div class="card-header !mb-0 !p-[.9rem_1.3rem_.85rem] !border-0 !rounded-[0.4rem] !bg-inherit" id="accordion-heading-2-3">
-                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-3" aria-expanded="false" aria-controls="accordion-collapse-2-3">ทำอย่างไร หากเติมเงินแล้วแต่เงินไม่เข้าระบบ App?</button>
+                  <button class="!text-[#343f52] !text-[0.9rem] hover:!text-[#605dba] before:!text-[#605dba] collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-3" aria-expanded="false" aria-controls="accordion-collapse-2-3" id="add_money"></button>
                 </div>
                 <!-- /.card-header -->
                 <div id="accordion-collapse-2-3" class="collapse" aria-labelledby="accordion-heading-2-3" data-bs-target="#accordion-2">
                   <div class="card-body flex-[1_1_auto]  p-[0_1.25rem_.25rem_2.35rem]">
-                    <p>ตรวจสอบว่าระบบหักเงินจากบัญชีจริงหรือไม่ หากระบบหักเงินจริงให้รีเฟรชแอปใหม่อีกครั้ง ถ้าหากเงินไม่เข้าระบบจริงให้ติดต่อเจ้าหน้าที่.</p>
+                    <p id="add_money_body"></p>
                   </div>
                   <!-- /.card-body -->
                 </div>
@@ -537,7 +536,8 @@
           <div class="container pt-20 xl:pt-8 lg:pt-8 md:pt-8 pb-16 xl:pb-20 lg:pb-20 md:pb-20">
             <div class="flex flex-wrap mx-[-15px]">
               <div class="lg:w-9/12 xl:w-8/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center">
-                <h3 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-10">ตัวอย่าง Application <span class="!relative z-[2] after:content-[''] after:absolute after:z-[-1] after:block after:bg-no-repeat after:bg-bottom after:bottom-[-0.1em] after:w-[110%] after:h-[0.3em] after:-translate-x-2/4 after:left-2/4  style-2 yellow">EVX</span></h3>
+                <h3 class="text-[calc(1.305rem_+_0.66vw)] font-bold xl:text-[1.8rem] !leading-[1.3] mb-10" id="example"> </h3>
+                <!-- <span class="!relative z-[2] after:content-[''] after:absolute after:z-[-1] after:block after:bg-no-repeat after:bg-bottom after:bottom-[-0.1em] after:w-[110%] after:h-[0.3em] after:-translate-x-2/4 after:left-2/4  style-2 yellow" id="example_evx"></span> -->
               </div>
               <!-- /column -->
             </div>
@@ -706,6 +706,7 @@
       <path class="fill-none stroke-[#605dba] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
   <script src="./assets/js/index.js"></script>
