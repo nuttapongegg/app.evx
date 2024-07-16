@@ -91,9 +91,9 @@
               <li class="nav-item dropdown language-select uppercase group">
                 <a id="language-dropdown" class="nav-link dropdown-item dropdown-toggle after:!text-[#605dba] xl:!text-[.85rem] lg:!text-[.85rem] md:!text-[1.05rem] sm:!text-[1.05rem] xsm:!text-[1.05rem] hover:!text-[#605dba]" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TH</a>
                 <ul class="dropdown-menu group-hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">
-                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" onclick="setLanguage('TH'); return false;" href="#">TH</a></li>
-                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" onclick="setLanguage('EN'); return false;" href="#">EN</a></li>
-                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" onclick="setLanguage('LAO'); return false;" href="#">LAO</a></li>
+                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" onclick="setLanguage('th'); return false;" href="#">TH</a></li>
+                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" onclick="setLanguage('en'); return false;" href="#">EN</a></li>
+                  <li class="nav-item"><a class="dropdown-item hover:!text-[#605dba] hover:bg-[inherit] focus:text-[#3f78e0] focus:bg-[inherit]" onclick="setLanguage('lao'); return false;" href="#">LAO</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i class="uil uil-info-circle before:content-['\eb99'] !text-[1.1rem] hover:!text-[#605dba]"></i></a></li>
@@ -709,7 +709,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
-  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/index.js?v=<?= time(); ?>"></script>
 </body>
 
 </html>
